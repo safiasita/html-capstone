@@ -25,7 +25,7 @@ body{
 }
 .nav-link:hover, .nav-link:focus, .nav-link:active, .nav-link.active {
     color: #EFA30A; 
-    font-weight: 500;
+    font-weight: bold;
 }
 .table-dark {
     background-color: #3CADC9;
@@ -40,6 +40,6 @@ body{
 }
 .list-group-item:hover, .list-group-item:focus, .list-group-item.active, .list-group-item:active {
     color: white;
-    background-color: #3CADC9;
-    border-color: #3CADC9;
+    background-color: #28527A;
+    border-color: #28527A;
 }
