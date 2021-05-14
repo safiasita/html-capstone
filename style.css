@@ -19,13 +19,26 @@ body{
 }
 .card-title {
     color: #EFA30A;
+    border-bottom: 2px solid lightgray;
+    padding: 12px 0px;
+}
+.card-text-nt {
+    color: #EFA30A;
 }
 .nav-link {
     color: #EFA30A;
+    font-weight: bold;
 }
 .nav-link:hover, .nav-link:focus, .nav-link:active, .nav-link.active {
-    color: #EFA30A !important; 
-    font-weight: bold;
+    color: #EFA30A !important;
+    border-bottom: 4px solid #EFA30A;
+}
+.navbar a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-bottom: 4px solid transparent;
 }
 .table-dark {
     background-color: #3CADC9;
@@ -43,9 +56,8 @@ body{
     border-color: #8B8A8A !important;
 }
 .list-group-item:hover, .list-group-item:focus, .list-group-item.active, .list-group-item:active {
-    color: white;
-    background-color: #28527A;
-    border-color: #28527A;
+    background-color: whitesmoke;
+    border-color: whitesmoke;
 }
 .page-link {
     color: black;
