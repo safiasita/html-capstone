@@ -44,8 +44,8 @@ body{
     background-color: #3CADC9;
 }
 .btn-primary {
-    background-color: #28527A;
-    border-color: #28527A;
+    background-color: #28527A !important;
+    border-color: #28527A !important;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
     background-color: #1C3650 !important;
