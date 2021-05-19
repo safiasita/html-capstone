@@ -17,24 +17,37 @@
   <body>
     <div class="container">
       <div class="row">
-        <div class="card mt-3">
+        <div class="card mt-3 w-100" style="border-width: 0px !important;">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-arrow p-0">
+              <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+              <li class="breadcrumb-item pl-0"><a href="#">Mata Kuliah</a></li>
+              <li class="breadcrumb-item pl-0"><a href="#">Strategi Belajar</a></li>
+              <li aria-current="page" class="breadcrumb-item active">Control Video</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card mt-4">
             <div class="row no-gutters">
               <div class="col-md-8">
                 <div class="card-body">
                 <h5 class="card-title">Algoritme dan Struktur Data: Tree</h5>
-                <iframe class="m-2" width="700" height="455" src="https://www.youtube.com/embed/i4CglDZfCJU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="720" height="455" src="https://www.youtube.com/embed/i4CglDZfCJU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="card-body">
                   <h5 class="card-title">Rangkuman</h5>
-                  <canvas class="mt-2 mb-2" id="myCanvas" width="325" height="400" style="border:2px solid lightgray;">
+                  <canvas id="myCanvas" width="325" height="451" style="border:2px solid lightgray;">
                   </canvas>
                   <div scope="col-md-2">
-                    <button class="btn btn-primary float-left" style="font-weight: bold;"><i class="fa fa-download"></i> UNDUH</button>
+                    <button class="btn btn-primary float-left mt-2 mb-2"><i class="fa fa-download"></i></button>
+                    <button class="btn btn-primary float-left ml-2 mt-2 mb-2"><i class="far fa-save fa-lg"></i></button>
                   </div>
                     <div scope="col-md-2">
-                    <button type="submit" class="btn btn-primary float-right" style="font-weight: bold;">SELESAI</button>
+                      <a href="#" class="btn btn-primary float-right mt-2 mb-2" style="font-weight: bold;">SELESAI</a> 
                   </div>
                 </div>
               </div>
