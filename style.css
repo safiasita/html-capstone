@@ -59,6 +59,10 @@ body{
     background-color: whitesmoke;
     border-color: whitesmoke;
 }
+#list-group-item-nh, list-group-item-nh:hover, #list-group-item-nh:focus, #list-group-item-nh.active, #list-group-item-nh:active {
+    background-color: white;
+    border-color: lightgray;
+}
 .page-link {
     color: black;
     border-radius: 25px;
