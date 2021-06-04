@@ -169,4 +169,33 @@ body{
 .breadcrumb-arrow li.active:after,
 .breadcrumb-arrow li.active:before {
     border-left-color: #1e6d8a;
+}
+#imageUpload
+{
+    display: none;
+}
+#profile-container {
+    width: 175px;
+    height: 175px;
+    overflow: auto;
+}
+#profile-container img {
+    width: 175px;
+    height: 175px;
+}
+#profile-container #btn-profile {
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
   }
+.btn-circle {
+    width: 50px;
+    height: 50px;
+    padding: 7px 10px;
+    border-radius: 25px;
+}
+.form-control {
+    border-color: #28527A;
+}

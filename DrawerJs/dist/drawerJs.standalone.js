@@ -29403,6 +29403,7 @@ DrawerJs.texts = {
       borderCss: '1px dashed rgb(195, 194, 194)',
       borderCssEditMode: '1px dashed rgb(195, 194, 194)',
 
+      defaultImageUrl: 'img/gambar.jpg',
 
       plugins: [],
       pluginsConfig: {},
