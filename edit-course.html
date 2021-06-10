@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Edit Mata Kuliah</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-4">
+      <div class="col-md-8">
+        <div class="card" style="height: 100%;">
+          <div class="card-body">
+            <h5 class="card-title">Edit Mata Kuliah</h5>
+            <form>
+              <div class="row mb-3">
+                <label for="inputEditNamaMK" class="col-sm-3 col-form-label">Nama Mata Kuliah</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="inputEditNamaMK">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputEditNamaDosen" class="col-sm-3 col-form-label">Nama Pengajar</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="inputEditNamaMK">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="TextareaEditDescMK" class="col-sm-3 form-label">Deskripsi</label>
+                <div class="col-sm-9">
+                  <textarea class="form-control" id="TextareaEditDescMK" rows="2"></textarea>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="formEditFileMK" class="col-sm-3 form-label">Gambar Mata Kuliah</label>  
+                <div class="col-sm-9">
+                  <input class="form-control" type="file" id="formEditFileMK">
+                </div>
+              </div>
+              <div class="d-grid">
+                <a href="#" class="btn btn-primary float-right" style="font-weight: bold;">SIMPAN</a>
+                <a href="#" class="btn btn-secondary float-right mr-2" style="font-weight: bold;">BATAL</a>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script>
+      $(document).ready(function(){
+          $(".show-toast").click(function(){
+              $("#myToast").toast({
+                  autohide: false
+              });
+          }); 
+      });
+      </script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </body>
+</html>

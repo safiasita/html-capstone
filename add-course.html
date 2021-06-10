@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Dashboard Admin</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Mata Kuliah Aktif</h5>
+            <div class="container-sm mt-4 mb-3">
+              <div class="card" style="border-width: 0px;">   
+              <img src="img/ASD3.png" class="card-img-top" alt="Algoritme dan Struktur Data">
+              <div class="card-body">
+              <div class="text-center" style="transform: rotate(0);">
+                <h6 class="card-text-nt">Algoritme dan Struktur Data</h6>
+                <p class="small m-1">Dr. Indriana Hidayah, S.T., M.T.</p>
+                <p class="small m-1">Semester Ganjil 2020/2021</p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+              <div class="text-center mt-3">
+                <button type="button" class="btn btn-danger mr-2" data-toggle="modal" data-target="#ModalHapusMK" style="font-weight: bold;width: 95px;">HAPUS</button>
+                <div class="modal fade" id="ModalHapusMK" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="ModalHapusMKLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document" style="width: 250px;">
+                <div class="modal-content">
+                  <div class="modal-body text-center">
+                    <img src="img/ic_virtual tutor.png"class="flex-shrink-0 mr-2" width="200px" height="200px">
+                    <h6 class="modal-title mt-2" id="ModalHapusMKLabel">Apakah kamu yakin akan menghapus kelas ini?</h6>
+                    <div class="d-grid mt-3">
+                      <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal" aria-label="Close" style="font-weight: bold;width: 100px;">TIDAK</button>
+                      <a href="#" class="btn btn-primary" style="font-weight: bold;width: 100px;">YA</a> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+                <a href="#" class="btn btn-primary" style="font-weight: bold;width: 95px;">EDIT</a>
+              </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="card" style="height: 100%;">
+          <div class="card-body">
+            <h5 class="card-title">Tambah Mata Kuliah</h5>
+            <form>
+              <div class="row mb-3">
+                <label for="inputNamaMK" class="col-sm-3 col-form-label">Nama Mata Kuliah</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="inputNamaMK">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="inputNamaDosen" class="col-sm-3 col-form-label">Nama Pengajar</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="inputNamaMK">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="TextareaDescMK" class="col-sm-3 form-label">Deskripsi</label>
+                <div class="col-sm-9">
+                  <textarea class="form-control" id="TextareaDescMK" rows="2"></textarea>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="formFileMK" class="col-sm-3 form-label">Gambar Mata Kuliah</label>  
+                <div class="col-sm-9">
+                  <input class="form-control" type="file" id="formFileMK">
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary float-right" style="font-weight: bold;">SIMPAN</button>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script>
+      $(document).ready(function(){
+          $(".show-toast").click(function(){
+              $("#myToast").toast({
+                  autohide: false
+              });
+          }); 
+      });
+      </script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </body>
+</html>
