@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
-    <title>Evaluasi Non Mandiri: Algoritme dan Struktur Data</title>
+    <title>Evaluasi Mandiri: Algoritme dan Struktur Data</title>
   </head>
   <body>
     <div class="container">
@@ -67,70 +67,55 @@
         <div class="card w-100 mt-5 mb-5">
           <div class="row">
           <div class="col-md-12">
-            <div class="accordion" id="accordionEvalM">
-            <div class="accordion-item">
-              <button class="btn w-100" id="headingEvalM" data-toggle="collapse" data-target="#collapseEvalM">
-                <h5 class="card-text-nt m-1 mb-3 text-left">Tree <i class="fas fa-angle-down float-right m-1" style="color: #28527A;"></i></h5>
-              </button>  
-              <div class="collapse" id="collapseEvalM" aria-labelledby="headingEvalM" data-parent="#accordionEvalM">
-                <div class="card-body">
-                <form>
-                  <div class="row mb-3">
-                    <label for="inputJudulEvalM" class="col-sm-3 col-form-label">Judul materi</label>
-                    <div class="col-sm-9">
-                      <input type="text" class="form-control" id="inputJudulEvalM">
-                    </div>
-                  </div>
-                  <div class="row mb-3">
-                    <label for="inputEvalM1" class="col-sm-3 col-form-label" style="font-weight: bold;">Soal 1</label>
-                    <div class="col-sm-9">
-                      <input type="text" class="form-control" id="inputEvalM1">
-                    </div>
-                  </div>
-                  <div class="row mb-3">
-                    <label for="inputEvalM1Pilihan" class="col-sm-3 col-form-label">Jawaban a</label>
-                    <div class="col-sm-9">
-                      <input type="text" class="form-control" id="inputEvalM1Pilihan">
-                    </div>
-                  </div>
-                </form>
-                <button type="button" class="btn btn-primary float-right mt-3 mb-3" style="font-weight: bold;width: 100px;">SIMPAN</button>
-              </div>
-              </div>
-            </div>
-            </div>
-          </div>
-        </div>
-        </div>
-          <div class="card w-100 mt-5 mb-5">
-              <div class="row">
-                <div class="card col-md-12">
-                  <div class="card-body">
-                    <h5 class="card-text-nt mb-3">Tree <a href="#" class="float-right"><i class="far fa-edit fa-lg" style="color: #28527A;" data-toggle="tooltip" data-placement="top" title="Edit"></i></a></h5>
-                    <p class="card-text">Buatlah program Stack dengan bahasa C. Format berisi source code dan screenshot program.</p>
-                    <p class="card-text mt-3" style="font-weight: bold;">Due date: 30 April 2021, 23:59</p>
-                    <button type="button" class="btn btn-primary float-right mt-3 mb-3" style="font-weight: bold;width: 100px;">UNDUH</button>
-                    <button type="button" class="btn btn-danger float-right mt-3 mb-3 mr-2" data-toggle="modal" data-target="#ModalHapusEvalNM" style="font-weight: bold;width: 100px;">HAPUS</button>
-                    <div class="modal fade" id="ModalHapusEvalNM" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="ModalHapusEvalNMLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document" style="width: 250px;">
-                    <div class="modal-content">
-                      <div class="modal-body text-center">
-                        <img src="img/ic_virtual tutor.png"class="flex-shrink-0 mr-2" width="200px" height="200px">
-                        <h6 class="modal-title mt-2" id="ModalHapusEvalNMLabel">Apakah kamu yakin akan menghapus evaluasi non mandiri ini?</h6>
-                        <div class="d-grid mt-3">
-                          <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal" aria-label="Close" style="font-weight: bold;width: 100px;">TIDAK</button>
-                          <a href="#" class="btn btn-primary" style="font-weight: bold;width: 100px;">YA</a> 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  </div>
+            <div class="card-body">
+              <h5 class="card-text-nt mb-3">Evaluasi Mandiri: Sorting</h5>
+              <a href="#" class="float-right mb-3"><i class="far fa-edit fa-2x" style="color: #28527A;" data-toggle="tooltip" data-placement="top" title="Edit"></i></a>
+              <a href="#" class="float-right mb-3 mr-3"><i class="far fa-trash-alt fa-2x" style="color: red;" data-toggle="modal" data-target="#ModalHapusEvalNM" data-toggle="tooltip" data-placement="top" title="Hapus"></i></a>
+              <div class="modal fade" id="ModalHapusEvalNM" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="ModalHapusEvalNMLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document" style="width: 250px;">
+              <div class="modal-content">
+                <div class="modal-body text-center">
+                  <img src="img/ic_virtual tutor.png"class="flex-shrink-0 mr-2" width="200px" height="200px">
+                  <h6 class="modal-title mt-2" id="ModalHapusEvalNMLabel">Apakah kamu yakin akan menghapus evaluasi mandiri ini?</h6>
+                  <div class="d-grid mt-3">
+                    <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal" aria-label="Close" style="font-weight: bold;width: 100px;">TIDAK</button>
+                    <a href="#" class="btn btn-primary" style="font-weight: bold;width: 100px;">YA</a> 
                   </div>
                 </div>
               </div>
-              </div>
+            </div>
+            </div>
+            </div>
           </div>
         </div>
+        </div>
+        <div class="card w-100 mt-5 mb-5">
+          <div class="row">
+          <div class="col-md-12">
+            <div class="card-body">
+              <h5 class="card-text-nt mb-3">Evaluasi Mandiri: Tree</h5>
+              <a href="#" class="float-right mb-3"><i class="far fa-edit fa-2x" style="color: #28527A;" data-toggle="tooltip" data-placement="top" title="Edit"></i></a>
+              <a href="#" class="float-right mb-3 mr-3"><i class="far fa-trash-alt fa-2x" style="color: red;" data-toggle="modal" data-target="#ModalHapusEvalNM" data-toggle="tooltip" data-placement="top" title="Hapus"></i></a>
+              <div class="modal fade" id="ModalHapusEvalNM" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="ModalHapusEvalNMLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document" style="width: 250px;">
+              <div class="modal-content">
+                <div class="modal-body text-center">
+                  <img src="img/ic_virtual tutor.png"class="flex-shrink-0 mr-2" width="200px" height="200px">
+                  <h6 class="modal-title mt-2" id="ModalHapusEvalNMLabel">Apakah kamu yakin akan menghapus evaluasi mandiri ini?</h6>
+                  <div class="d-grid mt-3">
+                    <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal" aria-label="Close" style="font-weight: bold;width: 100px;">TIDAK</button>
+                    <a href="#" class="btn btn-primary" style="font-weight: bold;width: 100px;">YA</a> 
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
     </div>
     </div>
 
