@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Edit Materi</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="card mt-3 w-100" style="border-width: 0px !important;">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-arrow p-0">
+              <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+              <li class="breadcrumb-item pl-0"><a href="#">Mata Kuliah</a></li>
+              <li aria-current="page" class="breadcrumb-item active">Edit Materi</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card-course w-100 mt-4">
+            <div class="row no-gutters">
+            <div class="col-md-2>">
+                <img src="img/ASD.png" class="card-img-center mt-4 ml-4" alt="Algoritme dan Struktur Data" width="100px" height="100px">
+            </div>
+            <div class="col-md-10">
+                <div class="card-body">
+                    <h5 class="card-text-nt m-1">ALGORITME DAN STRUKTUR DATA</h5>
+                    <p class="card-text-course m-1">Dr. Indriana Hidayah, S.T., M.T.</p>
+                    <p class="card-text-course m-1">Semester Ganjil 2020/2021</p>
+                    <p class="card-text-course m-1">TIF 141</p>
+                </div>
+            </div>
+            </div>
+          </div>
+      </div>
+      <div class="row mt-4">
+      <div class="card col-md-12">
+          <div class="card-body">
+            <h5 class="card-title">Edit Materi Kuliah</h5>
+            <form>
+              <div class="row mb-3">
+                <label for="inputJudulMateri" class="col-sm-3 col-form-label">Judul</label>
+                <div class="col-sm-9">
+                  <input type="text" class="form-control" id="inputJudulMateri">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="TextareaDescMateri" class="col-sm-3 form-label">Deskripsi</label>
+                <div class="col-sm-9">
+                  <textarea class="form-control" id="TextareaDescMateri" rows="2"></textarea>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="formImgMateri" class="col-sm-3 form-label">Gambar Materi</label>  
+                <div class="col-sm-9">
+                  <input class="form-control" type="file" accept=".jpg,.gif,.png" id="formImgMateri">
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="formFileVideo" class="col-sm-3 form-label">Control Video</label>  
+                <div class="input-group col-sm-9">
+                  <input type="text" aria-label="Link" class="form-control" id="formFileVideo" placeholder="Link Youtube" aria-describedby="FileVideoHelp">
+                  <span class="input-group-text">atau</span> 
+                  <input class="form-control" type="file" accept=".mp4,.avi,.flv,.wmv"" id="formFileVideo" aria-describedby="FileVideoHelp">
+                </div>
+                <div class="col-sm-3"></div>
+                <div id="FileVideoHelp" class="form-text small col-sm-9">
+                Materi berupa video dengan format MP4, AVI, FLV, atau WMV
+                </div>
+              </div>
+              <div class="row mb-3">
+                <label for="formFileSummary" class="col-sm-3 form-label">Summarization</label>
+                <div class="input-group col-sm-9">
+                  <input type="text" aria-label="Link" class="form-control" id="formFileSummary" placeholder="Link Google Drive" aria-describedby="FileSummaryHelp">
+                  <span class="input-group-text">atau</span>
+                  <input class="form-control" type="file" accept=".doc,.docx,.pdf" id="formFileSummary" aria-describedby="FileSummaryHelp">
+                </div>
+                <div class="col-sm-3"></div>
+                <div id="FileSummaryHelp" class="form-text small col-sm-9">
+                Materi berupa modul dengan format DOC, DOCX, atau PDF
+                </div>  
+              </div>
+              <div class="row mt-3">
+                <label for="formFileMindMap" class="col-sm-3 form-label">Mind Mapping</label>
+                <div class="input-group col-sm-9">
+                  <input type="text" aria-label="Link" class="form-control" id="formFileSummary" placeholder="Link Google Drive">
+                  <span class="input-group-text">atau</span>
+                  <input type="file" class="form-control" accept=".ppt,.pptx,.pdf" id="formFileMindMap">
+                </div>
+                <div class="col-sm-3"></div>
+                <div id="FileMindMapHelp" class="form-text small col-sm-9">
+                Materi berupa slide dengan format PPT, PPTX, atau PDF
+                </div>  
+              </div>
+              <div class="d-grid mt-2">
+                <a href="#" class="btn btn-primary float-right" style="font-weight: bold;">SIMPAN</a>
+                <a href="#" class="btn btn-secondary float-right mr-2" style="font-weight: bold;">BATAL</a>
+              </div>
+              </div>
+            </form>
+      </div>
+    </div>
+  </div>
+  </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script>
+      $(document).ready(function(){
+          $(".show-toast").click(function(){
+              $("#myToast").toast({
+                  autohide: false
+              });
+          }); 
+      });
+      </script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </body>
+</html>

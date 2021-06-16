@@ -62,7 +62,7 @@
           <div class="card-body">
             <h5 class="card-title">Tambah Mata Kuliah</h5>
             <form>
-              <div class="row mb-3">
+              <div class="row mt-5 mb-3">
                 <label for="inputNamaMK" class="col-sm-3 col-form-label">Nama Mata Kuliah</label>
                 <div class="col-sm-9">
                   <input type="text" class="form-control" id="inputNamaMK">
@@ -83,7 +83,7 @@
               <div class="row mb-3">
                 <label for="formFileMK" class="col-sm-3 form-label">Gambar Mata Kuliah</label>  
                 <div class="col-sm-9">
-                  <input class="form-control" type="file" id="formFileMK">
+                  <input class="form-control" type="file" accept=".jpg,.gif,.png" id="formFileMK">
                 </div>
               </div>
               <button type="submit" class="btn btn-primary float-right" style="font-weight: bold;">SIMPAN</button>
@@ -95,15 +95,6 @@
   </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
-    <script>
-      $(document).ready(function(){
-          $(".show-toast").click(function(){
-              $("#myToast").toast({
-                  autohide: false
-              });
-          }); 
-      });
-      </script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </body>
 </html>

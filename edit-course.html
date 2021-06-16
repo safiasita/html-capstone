@@ -18,9 +18,18 @@
   </head>
   <body>
     <div class="container">
+      <div class="row">
+        <div class="card mt-3 w-100" style="border-width: 0px !important;">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-arrow p-0">
+              <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+              <li aria-current="page" class="breadcrumb-item active">Edit Mata Kuliah</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
       <div class="row mt-4">
-      <div class="col-md-8">
-        <div class="card" style="height: 100%;">
+        <div class="card col-md-12">
           <div class="card-body">
             <h5 class="card-title">Edit Mata Kuliah</h5>
             <form>
@@ -33,7 +42,7 @@
               <div class="row mb-3">
                 <label for="inputEditNamaDosen" class="col-sm-3 col-form-label">Nama Pengajar</label>
                 <div class="col-sm-9">
-                  <input type="text" class="form-control" id="inputEditNamaMK">
+                  <input type="text" class="form-control" id="inputEditNamaDosen">
                 </div>
               </div>
               <div class="row mb-3">
@@ -45,7 +54,7 @@
               <div class="row mb-3">
                 <label for="formEditFileMK" class="col-sm-3 form-label">Gambar Mata Kuliah</label>  
                 <div class="col-sm-9">
-                  <input class="form-control" type="file" id="formEditFileMK">
+                  <input class="form-control" type="file" accept=".jpg,.gif,.png" id="formEditFileMK">
                 </div>
               </div>
               <div class="d-grid">
@@ -54,7 +63,6 @@
               </div>
             </form>
         </div>
-      </div>
     </div>
   </div>
   </div>
