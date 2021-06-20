@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
@@ -45,7 +47,7 @@
       </div>
     <div class="row">
       <div class="card w-75 mt-4">
-        <ul class="nav navbar nav-justified">
+        <ul class="nav nav-justified">
           <li class="nav-item">
             <a class="nav-link active" href="#">Materi Kuliah</a>
           </li>
@@ -112,7 +114,22 @@
                 <div class="card-body">
                   <h5 class="card-text-nt">Sorting</h5>
                   <p class="card-text">Metode yang digunakan untuk mengatur sekumpulan objek menurut susunan tertentu.</p>
-                  <a href="#" class="btn btn-primary btn-block" style="font-weight: bold;">PILIH</a> 
+                  <a href="#" class="btn btn-primary btn-block" style="font-weight: bold;" data-toggle="modal" data-target="#ModalAPK">PILIH</a>
+                  <div class="modal fade" id="ModalAPK" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="ModalAPKLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document" style="width: 250px;">
+                    <div class="modal-content">
+                        <div class="modal-body text-center">
+                          <img src="img/ic_virtual tutor.png"class="flex-shrink-0 mr-2" width="200px" height="200px">
+                          <h6 class="modal-title mt-2" id="ModalAPKLabel" style="color: #EFA30A;"">Activating Prior Knowledge</h6>
+                          <div class="small mt-2">Kamu belum menyelesaikan materi sebelumnya. Yuk, ikuti tes Activating Prior Knowledge terlebih dahulu untuk dapat memilih materi ini.</div>
+                          <div class="d-grid mt-3">
+                            <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal" aria-label="Close" style="font-weight: bold;width: 100px;">BATAL</button>
+                            <a href="#" class="btn btn-primary" style="font-weight: bold;width: 100px;">MULAI</a> 
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+                  </div> 
                 </div>
               </div>
             </div>
@@ -134,11 +151,11 @@
           <div class="card-body">
             <h5 class="card-title m-2">To-Do List</h5>
             <div class="list-group mt-4 m-1">
-              <a href="#" class="list-group-item list-group-item-action">
+              <a href="#" class="list-group-item list-group-item-action" id="list-group-item-course">
                 <p class="mb-1">Tugas Kelompok 1</p>
                 <small>30 April 2021, 23.59</small>
               </a>
-              <a href="#" class="list-group-item list-group-item-action">
+              <a href="#" class="list-group-item list-group-item-action" id="list-group-item-course">
                 <p class="mb-1">Tugas Individu 1</p>
                 <small>1 Mei 2021, 23.59</small>
               </a>

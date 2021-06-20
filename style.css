@@ -11,11 +11,17 @@ body{
 .card-text-course {
     color: white;
 }
-.card{
+.card {
     background-color: white;
     border-width: 0.5px;
     border-radius: 5px;
     box-shadow: 1px 1px 6px;
+}
+.card-body {
+    background-color: transparent !important;
+    border-width: 0px !important;
+    border-radius: 0px !important;
+    box-shadow: 0px 0px 0px !important;
 }
 .card-title {
     color: #EFA30A;
@@ -33,11 +39,10 @@ body{
     color: #EFA30A !important;
     border-bottom: 4px solid #EFA30A;
 }
-.navbar a {
+.nav a {
     display: block;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    padding: 16px;
     border-bottom: 4px solid transparent;
 }
 .table-dark {
@@ -46,26 +51,34 @@ body{
 .btn-primary {
     background-color: #28527A !important;
     border-color: #28527A !important;
+    border-width: 2px !important;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
     background-color: #1C3650 !important;
     border-color: #1C3650 !important;
+    border-width: 2px !important;
 }
 .btn-primary:disabled, .btn-primary:disabled:hover, a.btn-primary.disabled {
     background-color: #8B8A8A !important;
     border-color: #8B8A8A !important;
+    border-width: 2px !important;
 }
 .btn-secondary {
     background-color: white;
     color: #28527A;
-    border-color: white;
+    border-color: #28527A;
+    border-width: 2px;
 }
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active, .btn-secondary.active, .open>.dropdown-toggle.btn-secondary {
-    background-color: white !important;
+    background-color: whitesmoke !important;
     color: #28527A !important;
-    border-color: white !important;
+    border-color: #28527A !important;
+    border-width: 2px !important;
 }
-.list-group-item:hover, .list-group-item:focus, .list-group-item.active, .list-group-item:active {
+.btn-danger {
+    border-width: 2px !important;
+}
+#list-group-item-course:hover, #list-group-item-course:focus, #list-group-item-course.active, #course-list-group-item:active {
     background-color: whitesmoke;
     border-color: whitesmoke;
 }
