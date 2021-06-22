@@ -17,12 +17,6 @@ body{
     border-radius: 5px;
     box-shadow: 1px 1px 6px;
 }
-.card-body {
-    background-color: transparent !important;
-    border-width: 0px !important;
-    border-radius: 0px !important;
-    box-shadow: 0px 0px 0px !important;
-}
 #card-body-nm {
     background-color: transparent !important;
     border-width: 0px !important;
