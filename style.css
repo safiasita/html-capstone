@@ -23,6 +23,12 @@ body{
     border-radius: 0px !important;
     box-shadow: 0px 0px 0px !important;
 }
+#card-body-nm {
+    background-color: transparent !important;
+    border-width: 0px !important;
+    border-radius: 0px !important;
+    box-shadow: 0px 0px 0px !important;
+}
 .card-title {
     color: #EFA30A;
     border-bottom: 2px solid lightgray;
@@ -78,7 +84,7 @@ body{
 .btn-danger {
     border-width: 2px !important;
 }
-#list-group-item-course:hover, #list-group-item-course:focus, #list-group-item-course.active, #course-list-group-item:active {
+#list-group-item-course:hover, #list-group-item-course:focus, #list-group-item-course.active, #list-group-item-course:active {
     background-color: whitesmoke;
     border-color: whitesmoke;
 }
