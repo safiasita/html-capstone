@@ -25,32 +25,33 @@
               <a href="#" class="float-right"><i class="far fa-plus-square fa-lg" style="color: #28527A;" data-toggle="modal" data-toggle="tooltip" data-target="#ModalAddMK" data-placement="top" title="Tambah"></i></a>
               </h5>
               <div class="modal fade" id="ModalAddMK" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="ModalAddMKLabel" aria-hidden="true">
-                <div class="modal-xl modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-lg modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="ModalAddMKLabel" style="color: #EFA30A;">Tambah Mata Kuliah</h5>
+                    <button type="button" class="btn" data-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-lg" style="color: #28527A;"></i></button>
+                    </div>
                   <div class="modal-body">
-                    <h5 class="modal-title mt-2 mb-3 text-center" id="ModalAddMKLabel" style="color: #EFA30A;">Tambah Mata Kuliah</h5>
                   <form>
+                    <div class="row mb-3">
+                      <div class="col-sm-6">
+                        <label for="inputNamaMK" class="form-label">Nama Mata Kuliah <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
+                        <input type="text" class="form-control" id="inputNamaMK" placeholder="Input Nama Mata Kuliah">
+                      </div>
+                      <div class="col-sm-6">
+                        <label for="inputNamaDosen" class="form-label">Nama Pengajar <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
+                        <input input type="text" class="form-control" id="inputNamaDosen" placeholder="Input Nama Pengajar">
+                      </div>
+                    </div>
                       <div class="row mb-3">
-                        <label for="inputNamaMK" class="col-sm-2 col-form-label">Nama Mata Kuliah</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" id="inputNamaMK">
+                        <div class="col-sm-12">
+                          <label for="TextareaDescMK" class="form-label">Deskripsi</label>
+                          <textarea input type="text" class="form-control" id="TextareaDescMK" placeholder="Input Deskripsi"></textarea>
                         </div>
                       </div>
                       <div class="row mb-3">
-                        <label for="inputNamaDosen" class="col-sm-2 col-form-label">Nama Pengajar</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" id="inputNamaMK">
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <label for="TextareaDescMK" class="col-sm-2 form-label">Deskripsi</label>
-                        <div class="col-sm-10">
-                          <textarea class="form-control" id="TextareaDescMK" rows="2"></textarea>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <label for="formFileMK" class="col-sm-2 form-label">Gambar Mata Kuliah</label>  
-                        <div class="col-sm-10">
+                        <div class="col-sm-12">
+                          <label for="formFileMK" class="form-label">Gambar Mata Kuliah</label>
                           <input class="form-control" type="file" accept=".jpg,.gif,.png" id="formFileMK">
                         </div>
                       </div>
@@ -91,36 +92,37 @@
               </div>
                 <a href="#" class="btn btn-primary" style="font-weight: bold;width: 95px;" data-toggle="modal" data-target="#ModalEditMK">EDIT</a>
                 <div class="modal fade" id="ModalEditMK" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="ModalEditMKLabel" aria-hidden="true">
-                  <div class="modal-xl modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-lg modal-dialog modal-dialog-centered" role="document">
                   <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="ModalEditMKLabel" style="color: #EFA30A;">Edit Mata Kuliah</h5>
+                      <button type="button" class="btn" data-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-lg" style="color: #28527A;"></i></button>
+                      </div>
                     <div class="modal-body text-left">
-                      <h5 class="modal-title mt-2 mb-3 text-center" id="ModalEditMKLabel" style="color: #EFA30A;">Edit Mata Kuliah</h5>
                       <form>
                         <div class="row mb-3">
-                          <label for="inputEditNamaMK" class="col-sm-2 col-form-label">Nama Mata Kuliah</label>
-                          <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputEditNamaMK">
+                          <div class="col-sm-6">
+                            <label for="inputEditNamaMK" class="form-label">Nama Mata Kuliah <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
+                            <input type="text" class="form-control" id="inputEditNamaMK" placeholder="Input Nama Mata Kuliah">
+                          </div>
+                          <div class="col-sm-6">
+                            <label for="inputEditNamaDosen" class="form-label">Nama Pengajar <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
+                            <input input type="text" class="form-control" id="inputEditNamaDosen" placeholder="Input Nama Pengajar">
                           </div>
                         </div>
-                        <div class="row mb-3">
-                          <label for="inputEditNamaDosen" class="col-sm-2 col-form-label">Nama Pengajar</label>
-                          <div class="col-sm-10">
-                            <input type="text" class="form-control" id="inputEditNamaDosen">
+                          <div class="row mb-3">
+                            <div class="col-sm-12">
+                              <label for="TextareaEditDescMK" class="form-label">Deskripsi</label>
+                              <textarea input type="text" class="form-control" id="TextareaEditDescMK" placeholder="Input Deskripsi"></textarea>
+                            </div>
                           </div>
-                        </div>
-                        <div class="row mb-3">
-                          <label for="TextareaEditDescMK" class="col-sm-2 form-label">Deskripsi</label>
-                          <div class="col-sm-10">
-                            <textarea class="form-control" id="TextareaEditDescMK" rows="2"></textarea>
+                          <div class="row mb-3">
+                            <div class="col-sm-12">
+                              <label for="formEditFileMK" class="form-label">Gambar Mata Kuliah</label>
+                              <input class="form-control" type="file" accept=".jpg,.gif,.png" id="formEditFileMK">
+                            </div>
                           </div>
-                        </div>
-                        <div class="row mb-3">
-                          <label for="formEditFileMK" class="col-sm-2 form-label">Gambar Mata Kuliah</label>  
-                          <div class="col-sm-10">
-                            <input class="form-control" type="file" accept=".jpg,.gif,.png" id="formEditFileMK">
-                          </div>
-                        </div>
-                      </form>
+                        </form>
                       <div class="d-grid text-right">
                         <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal" aria-label="Close" style="font-weight: bold;width: 100px;">BATAL</button>
                         <a href="#" class="btn btn-primary" style="font-weight: bold;width: 100px;">SIMPAN</a> 

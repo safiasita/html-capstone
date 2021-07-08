@@ -65,35 +65,36 @@
       <div class="container px-5">
         <a href="#" class="float-right mt-3 mb-4"><i class="far fa-plus-square fa-2x" style="color: #28527A;" data-toggle="modal" data-toggle="tooltip" data-target="#ModalAddEvalNM" data-placement="top" title="Tambah"></i></a>
         <div class="modal fade" id="ModalAddEvalNM" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="ModalAddEvalNMLabel" aria-hidden="true">
-          <div class="modal-xl modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-lg modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="ModalAddEvalNMLabel" style="color: #EFA30A;">Tambah Evaluasi Non Mandiri</h5>
+            <button type="button" class="btn" data-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-lg" style="color: #28527A;"></i></button>
+            </div>
             <div class="modal-body">
-              <h5 class="modal-title mt-2 mb-3 text-center" id="ModalAddEvalNMLabel" style="color: #EFA30A;">Tambah Evaluasi Non Mandiri</h5>
-            <form style="color: black; font-size: 16px;">
-                <div class="row mb-3">
-                  <label for="inputJudulEvalNM" class="col-sm-3 col-form-label">Judul</label>
-                  <div class="col-sm-9">
-                    <input type="text" class="form-control" id="inputJudulEvalNM">
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <label for="TextareaDescEvalNM" class="col-sm-3 form-label">Deskripsi</label>
-                  <div class="col-sm-9">
-                    <textarea class="form-control" id="TextareaDescEvalNM" rows="2"></textarea>
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <label for="DateEvalNM" class="col-sm-3 form-label">Due Date</label>
-                  <div class="col-sm-9">
-                    <input class="form-control" type="datetime-local" id="DateEvalNM">
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <label for="FileEvalNM" class="col-sm-3 form-label">File Tambahan</label>
-                  <div class="col-sm-9">
-                    <input type="file" class="form-control" accept=".ppt,.pptx,.pdf" id="FileEvalNM">
-                  </div>
-                </div>
+          <form style="color: black; font-size: 16px;">
+            <div class="row mb-3">
+              <div class="col-sm-6">
+                <label for="inputJudulEvalNM" class="form-label">Judul <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
+                <input type="text" class="form-control" id="inputJudulEvalNM" placeholder="Input Judul">
+              </div>
+              <div class="col-sm-6">
+                <label for="DateEvalNM" class="form-label">Due Date <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
+                <input class="form-control" type="datetime-local" id="DateEvalNM">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-sm-12">
+                <label for="TextareaDescEvalNM" class="form-label">Deskripsi <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
+                <textarea input type="text" class="form-control" id="TextareaDescEvalNM" placeholder="Input Deskripsi"></textarea>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-sm-12">
+                <label for="FileEvalNM" class="form-label">File Tambahan</label>
+                <input class="form-control" type="file" accept=".ppt,.pptx,.pdf" id="FileEvalNM">
+              </div>
+            </div>
           </form>
               <div class="d-grid text-right">
                 <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal" aria-label="Close" style="font-weight: bold;width: 100px;">BATAL</button>
@@ -114,33 +115,34 @@
               <a href="#" class="float-right mt-3 mb-3"><i class="fa fa-download fa-2x" style="color: #28527A;" data-toggle="tooltip" data-placement="top" title="Download Submission"></i></a>
               <a href="#" class="float-right mt-3 mb-3 mr-3"><i class="far fa-edit fa-2x" style="color: #28527A;" data-toggle="modal" data-target="#ModalEditEvalNM"data-toggle="tooltip" data-placement="top" title="Edit"></i></a>
               <div class="modal fade" id="ModalEditEvalNM" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="ModalEditEvalNMLabel" aria-hidden="true">
-                <div class="modal-xl modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-lg modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="ModalEditEvalNMLabel" style="color: #EFA30A;">Edit Evaluasi Non Mandiri</h5>
+                    <button type="button" class="btn" data-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-lg" style="color: #28527A;"></i></button>
+                    </div>
                   <div class="modal-body">
-                    <h5 class="modal-title mt-2 mb-3 text-center" id="ModalEditEvalNMLabel" style="color: #EFA30A;">Edit Evaluasi Non Mandiri</h5>
                   <form style="color: black; font-size: 16px;">
                       <div class="row mb-3">
-                        <label for="inputEditJudulEvalNM" class="col-sm-3 col-form-label">Judul</label>
-                        <div class="col-sm-9">
-                          <input type="text" class="form-control" id="inputEditJudulEvalNM">
+                        <div class="col-sm-6">
+                          <label for="inputEditJudulEvalNM" class="form-label">Judul <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
+                          <input type="text" class="form-control" id="inputEditJudulEvalNM" placeholder="Input Judul">
                         </div>
-                      </div>
-                      <div class="row mb-3">
-                        <label for="TextareaEditDescEvalNM" class="col-sm-3 form-label">Deskripsi</label>
-                        <div class="col-sm-9">
-                          <textarea class="form-control" id="TextareaEditDescEvalNM" rows="2"></textarea>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <label for="DateEditEvalNM" class="col-sm-3 form-label">Due Date</label>
-                        <div class="col-sm-9">
+                        <div class="col-sm-6">
+                          <label for="DateEditEvalNM" class="form-label">Due Date <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
                           <input class="form-control" type="datetime-local" id="DateEditEvalNM">
                         </div>
                       </div>
                       <div class="row mb-3">
-                        <label for="FileEditEvalNM" class="col-sm-3 form-label">File Tambahan</label>
-                        <div class="col-sm-9">
-                          <input type="file" class="form-control" accept=".ppt,.pptx,.pdf" id="FileEditEvalNM">
+                        <div class="col-sm-12">
+                          <label for="TextareaEditDescEvalNM" class="form-label">Deskripsi <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
+                          <textarea input type="text" class="form-control" id="TextareaEditDescEvalNM" placeholder="Input Deskripsi"></textarea>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-sm-12">
+                          <label for="FileEditEvalNM" class="form-label">File Tambahan</label>
+                          <input class="form-control" type="file" accept=".ppt,.pptx,.pdf" id="FileEditEvalNM">
                         </div>
                       </div>
                 </form>
