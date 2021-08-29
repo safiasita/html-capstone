@@ -49,11 +49,14 @@
                           <textarea input type="text" class="form-control" id="TextareaDescMK" placeholder="Input Deskripsi"></textarea>
                         </div>
                       </div>
-                      <div class="row mb-3">
-                        <div class="col-sm-12">
-                          <label for="formFileMK" class="form-label">Gambar Mata Kuliah</label>
-                          <input class="form-control" type="file" accept=".jpg,.gif,.png" id="formFileMK">
+                      <div class="row">
+                        <div class="col-sm-12">  
+                        <label for="FileMK" class="form-label">Gambar Mata Kuliah</label>
                         </div>
+                      </div>
+                      <div class="custom-file mb-3">
+                        <input type="file" class="custom-file-input" accept=".jpg,.gif,.png" id="FileMK"/>
+                        <label class="custom-file-label" for="FileMK" style="border-color: #28527A;">Choose file</label>
                       </div>
                     </form>
                     <div class="d-grid text-right">
@@ -116,11 +119,14 @@
                               <textarea input type="text" class="form-control" id="TextareaEditDescMK" placeholder="Input Deskripsi"></textarea>
                             </div>
                           </div>
-                          <div class="row mb-3">
-                            <div class="col-sm-12">
-                              <label for="formEditFileMK" class="form-label">Gambar Mata Kuliah</label>
-                              <input class="form-control" type="file" accept=".jpg,.gif,.png" id="formEditFileMK">
+                          <div class="row">
+                            <div class="col-sm-12">  
+                            <label for="formEditFileMK" class="form-label">Gambar Mata Kuliah</label>
                             </div>
+                          </div>
+                          <div class="custom-file mb-3">
+                            <input type="file" class="custom-file-input" accept=".jpg,.gif,.png" id="formEditFileMK"/>
+                            <label class="custom-file-label" for="formEditFileMK" style="border-color: #28527A;">Choose file</label>
                           </div>
                         </form>
                       <div class="d-grid text-right">
@@ -142,5 +148,11 @@
 
     <!-- Optional JavaScript; choose one of the two! -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+      $(".custom-file-input").on("change", function() {
+      var fileName = $(this).val().split("\\").pop();
+      $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+      });
+      </script>
   </body>
 </html>

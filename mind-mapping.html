@@ -57,7 +57,7 @@
               </div>
             </div>
             <div class="col-md-12 text-center">
-              <button type="button" class="btn btn-primary mb-2"  data-toggle="modal" data-target="#ModalEvalMandiri"  style="font-weight: bold;width: 100px;">SELESAI</button>
+              <button type="button" class="btn btn-primary mt-2 mb-3"  data-toggle="modal" data-target="#ModalEvalMandiri"  style="font-weight: bold;width: 140px;font-size: large;">SELESAI</button>
               <div class="modal fade" id="ModalEvalMandiri" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="ModalEvalMandiriLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document" style="width: 250px;">
                 <div class="modal-content">
@@ -221,11 +221,12 @@
   
           // drawer is created as global property solely for debug purposes.
           // doing  in production is considered as bad practice
-          window.drawer = new DrawerJs.Drawer(null, {
-              plugins: drawerPlugins,
+          window.drawer = new DrawerJs.Drawer(null, { 
+            plugins: drawerPlugins,
               corePlugins: [
                   'Zoom' // use null here if you want to disable Zoom completely
               ],
+              
               pluginsConfig: {
                   Image: {
                       scaleDownLargeImage: true,

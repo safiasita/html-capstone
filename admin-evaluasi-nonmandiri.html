@@ -90,10 +90,15 @@
               </div>
             </div>
             <div class="row mb-3">
-              <div class="col-sm-12">
-                <label for="FileEvalNM" class="form-label">File Tambahan</label>
-                <input class="form-control" type="file" accept=".ppt,.pptx,.pdf" id="FileEvalNM">
+              <div class="col-sm-12">  
+                <label for="FileEvalNM" class="form-label">File Tambahan </label>
               </div>
+              <div class="col-sm-12">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="FileEvalNM"/>
+                  <label class="custom-file-label" for="FileEvalNM" style="border-color: #28527A;">Choose file</label>
+                </div>
+              </div>  
             </div>
           </form>
               <div class="d-grid text-right">
@@ -140,10 +145,15 @@
                         </div>
                       </div>
                       <div class="row mb-3">
-                        <div class="col-sm-12">
-                          <label for="FileEditEvalNM" class="form-label">File Tambahan</label>
-                          <input class="form-control" type="file" accept=".ppt,.pptx,.pdf" id="FileEditEvalNM">
+                        <div class="col-sm-12">  
+                          <label for="FileEditEvalNM" class="form-label">File Tambahan </label>
                         </div>
+                        <div class="col-sm-12">
+                          <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="FileEditEvalNM"/>
+                            <label class="custom-file-label" for="FileEditEvalNM" style="border-color: #28527A;">Choose file</label>
+                          </div>
+                        </div>  
                       </div>
                 </form>
                     <div class="d-grid text-right">
@@ -180,5 +190,11 @@
 
     <!-- Optional JavaScript-->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+      $(".custom-file-input").on("change", function() {
+      var fileName = $(this).val().split("\\").pop();
+      $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+      });
+    </script>
   </body>
 </html>

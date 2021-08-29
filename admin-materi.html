@@ -169,9 +169,12 @@
                       <label for="inputJudulMateri" class="form-label">Judul <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
                       <input type="text" class="form-control" id="inputJudulMateri" placeholder="Input Judul">
                     </div>
-                    <div class="col-sm-6">
-                      <label for="formImgMateri" class="form-label">Gambar Materi</label>
-                      <input type="file" accept=".jpg,.gif,.png" class="form-control" id="formImgMateri">
+                    <div class="col-sm-6">  
+                      <label for="formImgMateri" class="form-label">Gambar Mata Kuliah</label>
+                    <div class="col-sm-12">
+                      <input type="file" class="custom-file-input" accept=".jpg,.gif,.png" id="formImgMateri"/>
+                      <label class="custom-file-label" for="formImgMateri" style="border-color: #28527A;">Choose file</label>
+                    </div>
                     </div>
                   </div>
                   <div class="row mb-3">
@@ -187,22 +190,32 @@
                     </div>
                   </div>
                   <div class="row mb-3">
-                    <div class="col-sm-12">
+                    <div class="col-sm-12">  
                       <label for="formFileSummary" class="form-label">Materi Summarization <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                      <input type="file" class="form-control" accept=".doc,.docx,.pdf" id="formFileSummary" aria-describedby="FileSummaryHelp">
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" accept=".doc,.docx,.pdf" id="formFileSummary" aria-describedby="FileSummaryHelp"/>
+                        <label class="custom-file-label" for="formFileSummary" style="border-color: #28527A;">Choose file</label>
+                      </div>
                     </div>
                     <div id="FileSummaryHelp" class="form-text small col-sm-12">
                     Materi berupa modul dengan format DOC, DOCX, atau PDF
                     </div>  
                   </div>
-                  <div class="row mt-3">
-                    <div class="col-sm-12">
+                  <div class="row mb-3">
+                    <div class="col-sm-12">  
                       <label for="formFileMindMap" class="form-label">Materi Mind Mapping <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                      <input type="file" class="form-control" accept=".ppt,.pptx,.pdf" id="formFileMindMap" aria-describedby="FileMindMapHelp">
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" accept=".ppt,.pptx,.pdf" id="formFileMindMap" aria-describedby="FileMindMapHelp"/>
+                        <label class="custom-file-label" for="formFileMindMap" style="border-color: #28527A;">Choose file</label>
+                      </div>
                     </div>
                     <div id="FileMindMapHelp" class="form-text small col-sm-12">
-                    Materi berupa slide dengan format PPT, PPTX, atau PDF
-                    </div>  
+                      Materi berupa slide dengan format PPT, PPTX, atau PDF
+                    </div>   
                   </div>
                 </form>
                 <div class="d-grid text-right">
@@ -250,9 +263,12 @@
                           <label for="inputEditJudulMateri" class="form-label">Judul <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
                           <input type="text" class="form-control" id="inputEditJudulMateri" placeholder="Input Judul">
                         </div>
-                        <div class="col-sm-6">
-                          <label for="formEditImgMateri" class="form-label">Gambar Materi</label>
-                          <input type="file" accept=".jpg,.gif,.png" class="form-control" id="formEditImgMateri">
+                        <div class="col-sm-6">  
+                          <label for="formEditImgMateri" class="form-label">Gambar Mata Kuliah</label>
+                        <div class="col-sm-12">
+                          <input type="file" class="custom-file-input" accept=".jpg,.gif,.png" id="formEditImgMateri"/>
+                          <label class="custom-file-label" for="formEditImgMateri" style="border-color: #28527A;">Choose file</label>
+                        </div>
                         </div>
                       </div>
                       <div class="row mb-3">
@@ -268,22 +284,32 @@
                         </div>
                       </div>
                       <div class="row mb-3">
-                        <div class="col-sm-12">
+                        <div class="col-sm-12">  
                           <label for="formEditFileSummary" class="form-label">Materi Summarization <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                          <input type="file" class="form-control" accept=".doc,.docx,.pdf" id="formEditFileSummary" aria-describedby="FileSummaryHelp">
                         </div>
-                        <div id="FileSummaryHelp" class="form-text small col-sm-12">
+                        <div class="col-sm-12">
+                          <div class="custom-file">
+                            <input type="file" class="custom-file-input" accept=".doc,.docx,.pdf" id="formEditFileSummary" aria-describedby="EditFileSummaryHelp"/>
+                            <label class="custom-file-label" for="formEditFileSummary" style="border-color: #28527A;">Choose file</label>
+                          </div>
+                        </div>
+                        <div id="EditFileSummaryHelp" class="form-text small col-sm-12">
                         Materi berupa modul dengan format DOC, DOCX, atau PDF
                         </div>  
                       </div>
-                      <div class="row mt-3">
-                        <div class="col-sm-12">
+                      <div class="row mb-3">
+                        <div class="col-sm-12">  
                           <label for="formEditFileMindMap" class="form-label">Materi Mind Mapping <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                          <input type="file" class="form-control" accept=".ppt,.pptx,.pdf" id="formEditFileMindMap" aria-describedby="FileMindMapHelp">
                         </div>
-                        <div id="FileMindMapHelp" class="form-text small col-sm-12">
-                        Materi berupa slide dengan format PPT, PPTX, atau PDF
-                        </div>  
+                        <div class="col-sm-12">
+                          <div class="custom-file">
+                            <input type="file" class="custom-file-input" accept=".ppt,.pptx,.pdf" id="formEditFileMindMap" aria-describedby="EditFileMindMapHelp"/>
+                            <label class="custom-file-label" for="formEditFileMindMap" style="border-color: #28527A;">Choose file</label>
+                          </div>
+                        </div>
+                        <div id="EditFileMindMapHelp" class="form-text small col-sm-12">
+                          Materi berupa slide dengan format PPT, PPTX, atau PDF
+                        </div>   
                       </div>
                     </form>
                         <div class="d-grid text-right">
@@ -333,9 +359,12 @@
                             <label for="inputEditJudulMateri" class="form-label">Judul <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
                             <input type="text" class="form-control" id="inputEditJudulMateri" placeholder="Input Judul">
                           </div>
-                          <div class="col-sm-6">
-                            <label for="formEditImgMateri" class="form-label">Gambar Materi</label>
-                            <input type="file" accept=".jpg,.gif,.png" class="form-control" id="formEditImgMateri">
+                          <div class="col-sm-6">  
+                            <label for="formEditImgMateri" class="form-label">Gambar Mata Kuliah</label>
+                          <div class="col-sm-12">
+                            <input type="file" class="custom-file-input" accept=".jpg,.gif,.png" id="formEditImgMateri"/>
+                            <label class="custom-file-label" for="formEditImgMateri" style="border-color: #28527A;">Choose file</label>
+                          </div>
                           </div>
                         </div>
                         <div class="row mb-3">
@@ -351,22 +380,32 @@
                           </div>
                         </div>
                         <div class="row mb-3">
-                          <div class="col-sm-12">
+                          <div class="col-sm-12">  
                             <label for="formEditFileSummary" class="form-label">Materi Summarization <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                            <input type="file" class="form-control" accept=".doc,.docx,.pdf" id="formEditFileSummary" aria-describedby="FileSummaryHelp">
                           </div>
-                          <div id="FileSummaryHelp" class="form-text small col-sm-12">
+                          <div class="col-sm-12">
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" accept=".doc,.docx,.pdf" id="formEditFileSummary" aria-describedby="EditFileSummaryHelp"/>
+                              <label class="custom-file-label" for="formEditFileSummary" style="border-color: #28527A;">Choose file</label>
+                            </div>
+                          </div>
+                          <div id="EditFileSummaryHelp" class="form-text small col-sm-12">
                           Materi berupa modul dengan format DOC, DOCX, atau PDF
                           </div>  
                         </div>
-                        <div class="row mt-3">
-                          <div class="col-sm-12">
+                        <div class="row mb-3">
+                          <div class="col-sm-12">  
                             <label for="formEditFileMindMap" class="form-label">Materi Mind Mapping <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                            <input type="file" class="form-control" accept=".ppt,.pptx,.pdf" id="formEditFileMindMap" aria-describedby="FileMindMapHelp">
                           </div>
-                          <div id="FileMindMapHelp" class="form-text small col-sm-12">
-                          Materi berupa slide dengan format PPT, PPTX, atau PDF
-                          </div>  
+                          <div class="col-sm-12">
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" accept=".ppt,.pptx,.pdf" id="formEditFileMindMap" aria-describedby="EditFileMindMapHelp"/>
+                              <label class="custom-file-label" for="formEditFileMindMap" style="border-color: #28527A;">Choose file</label>
+                            </div>
+                          </div>
+                          <div id="EditFileMindMapHelp" class="form-text small col-sm-12">
+                            Materi berupa slide dengan format PPT, PPTX, atau PDF
+                          </div>   
                         </div>
                       </form>
                       <div class="d-grid text-right">
@@ -416,14 +455,17 @@
                             <label for="inputEditJudulMateri" class="form-label">Judul <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
                             <input type="text" class="form-control" id="inputEditJudulMateri" placeholder="Input Judul">
                           </div>
-                          <div class="col-sm-6">
-                            <label for="formEditImgMateri" class="form-label">Gambar Materi <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                            <input type="file" accept=".jpg,.gif,.png" class="form-control" id="formEditImgMateri">
+                          <div class="col-sm-6">  
+                            <label for="formEditImgMateri" class="form-label">Gambar Mata Kuliah</label>
+                          <div class="col-sm-12">
+                            <input type="file" class="custom-file-input" accept=".jpg,.gif,.png" id="formEditImgMateri"/>
+                            <label class="custom-file-label" for="formEditImgMateri" style="border-color: #28527A;">Choose file</label>
+                          </div>
                           </div>
                         </div>
                         <div class="row mb-3">
                           <div class="col-sm-12">
-                            <label for="TextareaEditDescMateri" class="form-label">Deskripsi <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
+                            <label for="TextareaEditDescMateri" class="form-label">Deskripsi</label>
                             <textarea type="text" class="form-control" id="TextareaEditDescMateri" placeholder="Input Deskripsi"></textarea>
                           </div>
                         </div>
@@ -434,22 +476,32 @@
                           </div>
                         </div>
                         <div class="row mb-3">
-                          <div class="col-sm-12">
+                          <div class="col-sm-12">  
                             <label for="formEditFileSummary" class="form-label">Materi Summarization <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                            <input type="file" class="form-control" accept=".doc,.docx,.pdf" id="formEditFileSummary" aria-describedby="FileSummaryHelp">
                           </div>
-                          <div id="FileSummaryHelp" class="form-text small col-sm-12">
+                          <div class="col-sm-12">
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" accept=".doc,.docx,.pdf" id="formEditFileSummary" aria-describedby="EditFileSummaryHelp"/>
+                              <label class="custom-file-label" for="formEditFileSummary" style="border-color: #28527A;">Choose file</label>
+                            </div>
+                          </div>
+                          <div id="EditFileSummaryHelp" class="form-text small col-sm-12">
                           Materi berupa modul dengan format DOC, DOCX, atau PDF
                           </div>  
                         </div>
-                        <div class="row mt-3">
-                          <div class="col-sm-12">
+                        <div class="row mb-3">
+                          <div class="col-sm-12">  
                             <label for="formEditFileMindMap" class="form-label">Materi Mind Mapping <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                            <input type="file" class="form-control" accept=".ppt,.pptx,.pdf" id="formEditFileMindMap" aria-describedby="FileMindMapHelp">
                           </div>
-                          <div id="FileMindMapHelp" class="form-text small col-sm-12">
-                          Materi berupa slide dengan format PPT, PPTX, atau PDF
-                          </div>  
+                          <div class="col-sm-12">
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" accept=".ppt,.pptx,.pdf" id="formEditFileMindMap" aria-describedby="EditFileMindMapHelp"/>
+                              <label class="custom-file-label" for="formEditFileMindMap" style="border-color: #28527A;">Choose file</label>
+                            </div>
+                          </div>
+                          <div id="EditFileMindMapHelp" class="form-text small col-sm-12">
+                            Materi berupa slide dengan format PPT, PPTX, atau PDF
+                          </div>   
                         </div>
                       </form>
                       <div class="d-grid text-right">
@@ -472,5 +524,11 @@
     <!-- Optional JavaScript-->
 
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+      $(".custom-file-input").on("change", function() {
+      var fileName = $(this).val().split("\\").pop();
+      $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+      });
+    </script>
   </body>
 </html>
