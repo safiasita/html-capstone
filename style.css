@@ -240,3 +240,6 @@ body{
 .form-control {
     border-color: #28527A;
 }
+.custom-file-label {
+    border-color: #28527A;
+}

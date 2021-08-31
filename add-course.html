@@ -32,26 +32,28 @@
                     <button type="button" class="btn" data-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-lg" style="color: #28527A;"></i></button>
                     </div>
                   <div class="modal-body">
-                  <form>
+                  <form novalidate="" action="/echo" method="POST" id="formAddMK">
                     <div class="row mb-3">
                       <div class="col-sm-6">
-                        <label for="inputNamaMK" class="form-label">Nama Mata Kuliah <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                        <input type="text" class="form-control" id="inputNamaMK" placeholder="Input Nama Mata Kuliah">
+                        <label for="inputNamaMK" class="form-label">Course name <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
+                        <input type="text" class="form-control" id="inputNamaMK" placeholder="Input course name" required>
+                        <div class="invalid-feedback">- Missing course name</div>
                       </div>
                       <div class="col-sm-6">
-                        <label for="inputNamaDosen" class="form-label">Nama Pengajar <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                        <input input type="text" class="form-control" id="inputNamaDosen" placeholder="Input Nama Pengajar">
+                        <label for="inputNamaDosen" class="form-label">Lecturer name <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
+                        <input input type="text" class="form-control" id="inputNamaDosen" placeholder="Input lecturer name" required>
+                        <div class="invalid-feedback">- Missing lecturer name</div>
                       </div>
                     </div>
                       <div class="row mb-3">
                         <div class="col-sm-12">
-                          <label for="TextareaDescMK" class="form-label">Deskripsi</label>
-                          <textarea input type="text" class="form-control" id="TextareaDescMK" placeholder="Input Deskripsi"></textarea>
+                          <label for="TextareaDescMK" class="form-label">Description</label>
+                          <textarea input type="text" class="form-control" id="TextareaDescMK" placeholder="Input description" style="border-color: #28527A;"></textarea>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col-sm-12">  
-                        <label for="FileMK" class="form-label">Gambar Mata Kuliah</label>
+                        <label for="FileMK" class="form-label">Cover image</label>
                         </div>
                       </div>
                       <div class="custom-file mb-3">
@@ -61,7 +63,7 @@
                     </form>
                     <div class="d-grid text-right">
                       <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal" aria-label="Close" style="font-weight: bold;width: 100px;">BATAL</button>
-                      <a href="#" class="btn btn-primary" style="font-weight: bold;width: 100px;">SIMPAN</a> 
+                      <button class="btn btn-primary" type="submit" style="font-weight: bold;width: 100px;">SIMPAN</button>
                     </div>
                   </div>
                   </div>
@@ -102,26 +104,28 @@
                       <button type="button" class="btn" data-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-lg" style="color: #28527A;"></i></button>
                       </div>
                     <div class="modal-body text-left">
-                      <form>
+                      <form novalidate="" action="/echo" method="POST" id="formEditMK">
                         <div class="row mb-3">
                           <div class="col-sm-6">
-                            <label for="inputEditNamaMK" class="form-label">Nama Mata Kuliah <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                            <input type="text" class="form-control" id="inputEditNamaMK" placeholder="Input Nama Mata Kuliah">
+                            <label for="inputEditNamaMK" class="form-label">Course name <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
+                            <input type="text" class="form-control" id="inputEditNamaMK" placeholder="Input course name" required>
+                            <div class="invalid-feedback">- Missing course name</div>
                           </div>
                           <div class="col-sm-6">
-                            <label for="inputEditNamaDosen" class="form-label">Nama Pengajar <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                            <input input type="text" class="form-control" id="inputEditNamaDosen" placeholder="Input Nama Pengajar">
+                            <label for="inputEditNamaDosen" class="form-label">Lecturer name <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
+                            <input input type="text" class="form-control" id="inputEditNamaDosen" placeholder="Input lecturer name" required>
+                            <div class="invalid-feedback">- Missing lecturer name</div>
                           </div>
                         </div>
                           <div class="row mb-3">
                             <div class="col-sm-12">
-                              <label for="TextareaEditDescMK" class="form-label">Deskripsi</label>
-                              <textarea input type="text" class="form-control" id="TextareaEditDescMK" placeholder="Input Deskripsi"></textarea>
+                              <label for="TextareaEditDescMK" class="form-label">Description</label>
+                              <textarea input type="text" class="form-control" id="TextareaEditDescMK" placeholder="Input description" style="border-color: #28527A;"></textarea>
                             </div>
                           </div>
                           <div class="row">
                             <div class="col-sm-12">  
-                            <label for="formEditFileMK" class="form-label">Gambar Mata Kuliah</label>
+                            <label for="formEditFileMK" class="form-label">Cover image</label>
                             </div>
                           </div>
                           <div class="custom-file mb-3">
@@ -131,7 +135,7 @@
                         </form>
                       <div class="d-grid text-right">
                         <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal" aria-label="Close" style="font-weight: bold;width: 100px;">BATAL</button>
-                        <a href="#" class="btn btn-primary" style="font-weight: bold;width: 100px;">SIMPAN</a> 
+                        <button class="btn btn-primary" type="submit" style="font-weight: bold;width: 100px;">SIMPAN</button>
                       </div>
                     </div>
                     </div>
@@ -153,6 +157,52 @@
       var fileName = $(this).val().split("\\").pop();
       $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
       });
+    </script>
+    <script>
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // fetch all the forms we want to apply custom style
+          var inputs = document.getElementsByClassName('form-control')
+      
+          // loop over each input and watch blue event
+          var validation = Array.prototype.filter.call(inputs, function(input) {
+              
+            input.addEventListener('blur', function(event) {
+              // reset
+              input.classList.remove('is-invalid')
+              
+              if (input.checkValidity() === false) {
+                  input.classList.add('is-invalid')
+              }
+
+            }, false);
+          });
+        }, false);
+      })()
+      </script>
+      <script>
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom validation styles
+            var inputs = document.getElementsByClassName('form-control')
+            var inputs = document.getElementsByClassName('custom-file-input')
+        
+            // Loop over each input and watch blue event
+            var validation = Array.prototype.filter.call(inputs, function(input) {
+        
+              input.addEventListener('blur', function(event) {
+                // reset
+                input.classList.remove('is-invalid')
+        
+                if (input.checkValidity() === false) {
+                    input.classList.add('is-invalid')
+                }
+              }, false);
+            });
+          }, false);
+        })()
       </script>
   </body>
 </html>

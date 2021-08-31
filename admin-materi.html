@@ -9,8 +9,10 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
@@ -76,7 +78,7 @@
                           <button type="button" class="btn" data-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-lg" style="color: #28527A;"></i></button>
                         </div>
                         <div class="modal-body">
-                        <form style="color: rgb(128, 116, 116); font-size: 16px;">
+                        <form id="formEditLO" style="color: rgb(128, 116, 116); font-size: 16px;">
                         <div class="row mb-3">
                           <div class="col-sm-12">
                             <label for="inputEditLO1" class="form-label">LO1 </label>
@@ -116,7 +118,7 @@
                       </form>
                           <div class="d-grid text-right">
                             <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal" aria-label="Close" style="font-weight: bold;width: 100px;">BATAL</button>
-                            <a href="#" class="btn btn-primary" style="font-weight: bold;width: 100px;">SIMPAN</a> 
+                            <button class="btn btn-primary" type="submit" style="font-weight: bold;width: 100px;">SIMPAN</button>
                           </div>
                         </div>
                         </div>
@@ -163,64 +165,62 @@
                 <button type="button" class="btn" data-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-lg" style="color: #28527A;"></i></button>
               </div>
               <div class="modal-body">
-                <form style="color: black; font-size: 16px;">
+                <form novalidate="" action="/echo" method="POST" id="formAddMateri" style="color: black; font-size: 16px;">
                   <div class="row mb-3">
                     <div class="col-sm-6">
-                      <label for="inputJudulMateri" class="form-label">Judul <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                      <input type="text" class="form-control" id="inputJudulMateri" placeholder="Input Judul">
+                      <label for="inputJudulMateri" class="form-label">Title <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
+                      <input type="text" class="form-control" id="inputJudulMateri" placeholder="Input title" required>
+                      <div class="invalid-feedback">- Missing title</div>
                     </div>
                     <div class="col-sm-6">  
-                      <label for="formImgMateri" class="form-label">Gambar Mata Kuliah</label>
+                      <label for="formImgMateri" class="form-label">Cover image</label>
                     <div class="col-sm-12">
                       <input type="file" class="custom-file-input" accept=".jpg,.gif,.png" id="formImgMateri"/>
-                      <label class="custom-file-label" for="formImgMateri" style="border-color: #28527A;">Choose file</label>
+                      <label class="custom-file-label" for="formImgMateri">Choose file</label>
                     </div>
                     </div>
                   </div>
                   <div class="row mb-3">
                     <div class="col-sm-12">
-                      <label for="TextareaDescMateri" class="form-label">Deskripsi</label>
-                      <textarea type="text" class="form-control" id="TextareaDescMateri" placeholder="Input Deskripsi"></textarea>
+                      <label for="TextareaDescMateri" class="form-label">Description</label>
+                      <textarea type="text" class="form-control" id="TextareaDescMateri" placeholder="Input description" style="border-color: #28527A;"></textarea>
                     </div>
                   </div>
                   <div class="row mb-3">
                     <div class="col-sm-12">
-                      <label for="formFileVideo" class="form-label">Materi Control Video <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                      <input type="text" aria-label="Link" class="form-control" id="formFileVideo" placeholder="Link Youtube">
+                      <label for="formFileVideo" class="form-label">Control video material <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
+                      <input type="text" aria-label="Link" class="form-control" id="formFileVideo" placeholder="Link Youtube" required>
+                      <div class="invalid-feedback">- Missing control video material</div>
                     </div>
-                  </div>
-                  <div class="row mb-3">
-                    <div class="col-sm-12">  
-                      <label for="formFileSummary" class="form-label">Materi Summarization <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                    </div>
-                    <div class="col-sm-12">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" accept=".doc,.docx,.pdf" id="formFileSummary" aria-describedby="FileSummaryHelp"/>
-                        <label class="custom-file-label" for="formFileSummary" style="border-color: #28527A;">Choose file</label>
-                      </div>
-                    </div>
-                    <div id="FileSummaryHelp" class="form-text small col-sm-12">
-                    Materi berupa modul dengan format DOC, DOCX, atau PDF
-                    </div>  
                   </div>
                   <div class="row mb-3">
                     <div class="col-sm-12">  
-                      <label for="formFileMindMap" class="form-label">Materi Mind Mapping <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
+                      <label for="formFileSummary" class="form-label">Summarization material <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
                     </div>
                     <div class="col-sm-12">
                       <div class="custom-file">
-                        <input type="file" class="custom-file-input" accept=".ppt,.pptx,.pdf" id="formFileMindMap" aria-describedby="FileMindMapHelp"/>
-                        <label class="custom-file-label" for="formFileMindMap" style="border-color: #28527A;">Choose file</label>
+                        <input type="file" class="custom-file-input" accept=".doc,.docx,.pdf" id="formFileSummary" required>
+                        <label class="custom-file-label" for="formFileSummary">Choose file</label>
+                        <div class="invalid-feedback">- Missing ummarization material</div>
+                      </div>
+                    </div> 
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-sm-12">  
+                      <label for="formFileMindMap" class="form-label">Mind mapping material <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" accept=".ppt,.pptx,.pdf" id="formFileMindMap" required>
+                        <label class="custom-file-label" for="formFileMindMap">Choose file</label>
+                        <div class="invalid-feedback">- Missing mind mapping material</div>
                       </div>
                     </div>
-                    <div id="FileMindMapHelp" class="form-text small col-sm-12">
-                      Materi berupa slide dengan format PPT, PPTX, atau PDF
-                    </div>   
                   </div>
                 </form>
                 <div class="d-grid text-right">
                   <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal" aria-label="Close" style="font-weight: bold;width: 100px;">BATAL</button>
-                  <a href="#" class="btn btn-primary" style="font-weight: bold;width: 100px;">SIMPAN</a> 
+                  <button class="btn btn-primary" type="submit" style="font-weight: bold;width: 100px;">SIMPAN</button> 
                 </div>
               </div>
               </div>
@@ -257,64 +257,62 @@
                         <button type="button" class="btn" data-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-lg" style="color: #28527A;"></i></button>
                       </div>
                       <div class="modal-body text-left">
-                      <form style="color: black; font-size: 16px;">
-                      <div class="row mb-3">
-                        <div class="col-sm-6">
-                          <label for="inputEditJudulMateri" class="form-label">Judul <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                          <input type="text" class="form-control" id="inputEditJudulMateri" placeholder="Input Judul">
-                        </div>
-                        <div class="col-sm-6">  
-                          <label for="formEditImgMateri" class="form-label">Gambar Mata Kuliah</label>
-                        <div class="col-sm-12">
-                          <input type="file" class="custom-file-input" accept=".jpg,.gif,.png" id="formEditImgMateri"/>
-                          <label class="custom-file-label" for="formEditImgMateri" style="border-color: #28527A;">Choose file</label>
-                        </div>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col-sm-12">
-                          <label for="TextareaEditDescMateri" class="form-label">Deskripsi</label>
-                          <textarea type="text" class="form-control" id="TextareaEditDescMateri" placeholder="Input Deskripsi"></textarea>
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col-sm-12">
-                          <label for="formEditFileVideo" class="form-label">Materi Control Video <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                          <input type="text" aria-label="Link" class="form-control" id="formEditFileVideo" placeholder="Link Youtube">
-                        </div>
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col-sm-12">  
-                          <label for="formEditFileSummary" class="form-label">Materi Summarization <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                        </div>
-                        <div class="col-sm-12">
-                          <div class="custom-file">
-                            <input type="file" class="custom-file-input" accept=".doc,.docx,.pdf" id="formEditFileSummary" aria-describedby="EditFileSummaryHelp"/>
-                            <label class="custom-file-label" for="formEditFileSummary" style="border-color: #28527A;">Choose file</label>
+                        <form novalidate="" action="/echo" method="POST" id="formEditMateri" style="color: black; font-size: 16px;">
+                          <div class="row mb-3">
+                            <div class="col-sm-6">
+                              <label for="inputEditJudulMateri" class="form-label">Title <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
+                              <input type="text" class="form-control" id="inputEditJudulMateri" placeholder="Input title" required>
+                              <div class="invalid-feedback">- Missing title</div>
+                            </div>
+                            <div class="col-sm-6">  
+                              <label for="formEditImgMateri" class="form-label">Cover image</label>
+                            <div class="col-sm-12">
+                              <input type="file" class="custom-file-input" accept=".jpg,.gif,.png" id="formEditImgMateri"/>
+                              <label class="custom-file-label" for="formEditImgMateri">Choose file</label>
+                            </div>
+                            </div>
                           </div>
-                        </div>
-                        <div id="EditFileSummaryHelp" class="form-text small col-sm-12">
-                        Materi berupa modul dengan format DOC, DOCX, atau PDF
-                        </div>  
-                      </div>
-                      <div class="row mb-3">
-                        <div class="col-sm-12">  
-                          <label for="formEditFileMindMap" class="form-label">Materi Mind Mapping <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                        </div>
-                        <div class="col-sm-12">
-                          <div class="custom-file">
-                            <input type="file" class="custom-file-input" accept=".ppt,.pptx,.pdf" id="formEditFileMindMap" aria-describedby="EditFileMindMapHelp"/>
-                            <label class="custom-file-label" for="formEditFileMindMap" style="border-color: #28527A;">Choose file</label>
+                          <div class="row mb-3">
+                            <div class="col-sm-12">
+                              <label for="TextareaEditDescMateri" class="form-label">Description</label>
+                              <textarea type="text" class="form-control" id="TextareaEditDescMateri" placeholder="Input description" style="border-color: #28527A;"></textarea>
+                            </div>
                           </div>
-                        </div>
-                        <div id="EditFileMindMapHelp" class="form-text small col-sm-12">
-                          Materi berupa slide dengan format PPT, PPTX, atau PDF
-                        </div>   
-                      </div>
-                    </form>
+                          <div class="row mb-3">
+                            <div class="col-sm-12">
+                              <label for="formEditFileVideo" class="form-label">Control video material <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
+                              <input type="text" aria-label="Link" class="form-control" id="formEditFileVideo" placeholder="Link Youtube" required>
+                              <div class="invalid-feedback">- Missing control video material</div>
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <div class="col-sm-12">  
+                              <label for="formEditFileSummary" class="form-label">Summarization material <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="custom-file">
+                                <input type="file" class="custom-file-input" accept=".doc,.docx,.pdf" id="formEditFileSummary" required>
+                                <label class="custom-file-label" for="formEditFileSummary">Choose file</label>
+                                <div class="invalid-feedback">- Missing summarization material</div>
+                              </div>
+                            </div>
+                          </div>                        
+                          <div class="row mb-3">
+                            <div class="col-sm-12">  
+                              <label for="formEditFileMindMap" class="form-label">Mind mapping material <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
+                            </div>
+                            <div class="col-sm-12">
+                              <div class="custom-file">
+                                <input type="file" class="custom-file-input" accept=".ppt,.pptx,.pdf" id="formEditFileMindMap" required>
+                                <label class="custom-file-label" for="formEditFileMindMap">Choose file</label>
+                                <div class="invalid-feedback">- Missing mind mapping material</div>
+                              </div>
+                            </div>  
+                          </div>
+                        </form>
                         <div class="d-grid text-right">
                           <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal" aria-label="Close" style="font-weight: bold;width: 100px;">BATAL</button>
-                          <a href="#" class="btn btn-primary" style="font-weight: bold;width: 100px;">SIMPAN</a> 
+                          <button class="btn btn-primary" type="submit" style="font-weight: bold;width: 100px;">SIMPAN</button>
                         </div>
                       </div>
                       </div>
@@ -331,91 +329,10 @@
                   <p class="card-text">Metode yang digunakan untuk mengatur sekumpulan objek menurut susunan tertentu.</p>
                   <button type="button" class="btn btn-danger mr-2" data-toggle="modal" data-target="#ModalHapusMateri" style="font-weight: bold;width: 100px;">HAPUS</button>
                   <div class="modal fade" id="ModalHapusMateri" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="ModalHapusMateriLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered" role="document" style="width: 250px;">
-                  <div class="modal-content">
-                    <div class="modal-body text-center">
-                      <img src="img/ic_virtual tutor.png"class="flex-shrink-0 mr-2" width="200px" height="200px">
-                      <h6 class="modal-title mt-2" id="ModalHapusMateriLabel">Apakah kamu yakin akan menghapus materi ini?</h6>
-                      <div class="d-grid mt-3">
-                        <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal" aria-label="Close" style="font-weight: bold;width: 100px;">TIDAK</button>
-                        <a href="#" class="btn btn-primary" style="font-weight: bold;width: 100px;">YA</a> 
-                      </div>
-                    </div>
                   </div>
-                </div>
-                </div>
-                <a href="#" class="btn btn-primary" style="font-weight: bold;width: 100px;" data-toggle="modal" data-target="#ModalEditMateri">EDIT</a>
-                <div class="modal fade" id="ModalEditMateri" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="ModalEditMateriLabel" aria-hidden="true">
-                  <div class="modal-lg modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="ModalEditMateriLabel" style="color: #EFA30A;">Edit Materi</h5>
-                      <button type="button" class="btn" data-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-lg" style="color: #28527A;"></i></button>
-                    </div>
-                    <div class="modal-body text-left">
-                      <form style="color: black; font-size: 16px;">
-                        <div class="row mb-3">
-                          <div class="col-sm-6">
-                            <label for="inputEditJudulMateri" class="form-label">Judul <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                            <input type="text" class="form-control" id="inputEditJudulMateri" placeholder="Input Judul">
-                          </div>
-                          <div class="col-sm-6">  
-                            <label for="formEditImgMateri" class="form-label">Gambar Mata Kuliah</label>
-                          <div class="col-sm-12">
-                            <input type="file" class="custom-file-input" accept=".jpg,.gif,.png" id="formEditImgMateri"/>
-                            <label class="custom-file-label" for="formEditImgMateri" style="border-color: #28527A;">Choose file</label>
-                          </div>
-                          </div>
-                        </div>
-                        <div class="row mb-3">
-                          <div class="col-sm-12">
-                            <label for="TextareaEditDescMateri" class="form-label">Deskripsi</label>
-                            <textarea type="text" class="form-control" id="TextareaEditDescMateri" placeholder="Input Deskripsi"></textarea>
-                          </div>
-                        </div>
-                        <div class="row mb-3">
-                          <div class="col-sm-12">
-                            <label for="formEditFileVideo" class="form-label">Materi Control Video <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                            <input type="text" aria-label="Link" class="form-control" id="formEditFileVideo" placeholder="Link Youtube">
-                          </div>
-                        </div>
-                        <div class="row mb-3">
-                          <div class="col-sm-12">  
-                            <label for="formEditFileSummary" class="form-label">Materi Summarization <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="custom-file">
-                              <input type="file" class="custom-file-input" accept=".doc,.docx,.pdf" id="formEditFileSummary" aria-describedby="EditFileSummaryHelp"/>
-                              <label class="custom-file-label" for="formEditFileSummary" style="border-color: #28527A;">Choose file</label>
-                            </div>
-                          </div>
-                          <div id="EditFileSummaryHelp" class="form-text small col-sm-12">
-                          Materi berupa modul dengan format DOC, DOCX, atau PDF
-                          </div>  
-                        </div>
-                        <div class="row mb-3">
-                          <div class="col-sm-12">  
-                            <label for="formEditFileMindMap" class="form-label">Materi Mind Mapping <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="custom-file">
-                              <input type="file" class="custom-file-input" accept=".ppt,.pptx,.pdf" id="formEditFileMindMap" aria-describedby="EditFileMindMapHelp"/>
-                              <label class="custom-file-label" for="formEditFileMindMap" style="border-color: #28527A;">Choose file</label>
-                            </div>
-                          </div>
-                          <div id="EditFileMindMapHelp" class="form-text small col-sm-12">
-                            Materi berupa slide dengan format PPT, PPTX, atau PDF
-                          </div>   
-                        </div>
-                      </form>
-                      <div class="d-grid text-right">
-                        <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal" aria-label="Close" style="font-weight: bold;width: 100px;">BATAL</button>
-                        <a href="#" class="btn btn-primary" style="font-weight: bold;width: 100px;">SIMPAN</a> 
-                      </div>
-                    </div>
-                    </div>
-                  </div>
-                </div>  
+                  <a href="#" class="btn btn-primary" style="font-weight: bold;width: 100px;" data-toggle="modal" data-target="#ModalEditMateri">EDIT</a>
+                  <div class="modal fade" id="ModalEditMateri" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="ModalEditMateriLabel" aria-hidden="true">
+                  </div>  
                 </div>
               </div>
             </div>
@@ -427,91 +344,10 @@
                   <p class="card-text">Metode yang digunakan untuk melakukan proses pencarian dari sekumpulan objek.</p>
                   <button type="button" class="btn btn-danger mr-2" data-toggle="modal" data-target="#ModalHapusMateri" style="font-weight: bold;width: 100px;">HAPUS</button>
                   <div class="modal fade" id="ModalHapusMateri" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="ModalHapusMateriLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered" role="document" style="width: 250px;">
-                  <div class="modal-content">
-                    <div class="modal-body text-center">
-                      <img src="img/ic_virtual tutor.png"class="flex-shrink-0 mr-2" width="200px" height="200px">
-                      <h6 class="modal-title mt-2" id="ModalHapusMateriLabel">Apakah kamu yakin akan menghapus materi ini?</h6>
-                      <div class="d-grid mt-3">
-                        <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal" aria-label="Close" style="font-weight: bold;width: 100px;">TIDAK</button>
-                        <a href="#" class="btn btn-primary" style="font-weight: bold;width: 100px;">YA</a> 
-                      </div>
-                    </div>
                   </div>
-                </div>
-                </div>
-                <a href="#" class="btn btn-primary" style="font-weight: bold;width: 100px;"data-toggle="modal" data-target="#ModalEditMateri">EDIT</a>
-                <div class="modal fade" id="ModalEditMateri" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="ModalEditMateriLabel" aria-hidden="true">
-                  <div class="modal-lg modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="ModalEditMateriLabel" style="color: #EFA30A;">Edit Materi</h5>
-                      <button type="button" class="btn" data-dismiss="modal" aria-label="Close"><i class="fas fa-times fa-lg" style="color: #28527A;"></i></button>
-                    </div>
-                    <div class="modal-body text-left">
-                      <form style="color: black; font-size: 16px;">
-                        <div class="row mb-3">
-                          <div class="col-sm-6">
-                            <label for="inputEditJudulMateri" class="form-label">Judul <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                            <input type="text" class="form-control" id="inputEditJudulMateri" placeholder="Input Judul">
-                          </div>
-                          <div class="col-sm-6">  
-                            <label for="formEditImgMateri" class="form-label">Gambar Mata Kuliah</label>
-                          <div class="col-sm-12">
-                            <input type="file" class="custom-file-input" accept=".jpg,.gif,.png" id="formEditImgMateri"/>
-                            <label class="custom-file-label" for="formEditImgMateri" style="border-color: #28527A;">Choose file</label>
-                          </div>
-                          </div>
-                        </div>
-                        <div class="row mb-3">
-                          <div class="col-sm-12">
-                            <label for="TextareaEditDescMateri" class="form-label">Deskripsi</label>
-                            <textarea type="text" class="form-control" id="TextareaEditDescMateri" placeholder="Input Deskripsi"></textarea>
-                          </div>
-                        </div>
-                        <div class="row mb-3">
-                          <div class="col-sm-12">
-                            <label for="formEditFileVideo" class="form-label">Materi Control Video <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                            <input type="text" aria-label="Link" class="form-control" id="formEditFileVideo" placeholder="Link Youtube">
-                          </div>
-                        </div>
-                        <div class="row mb-3">
-                          <div class="col-sm-12">  
-                            <label for="formEditFileSummary" class="form-label">Materi Summarization <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="custom-file">
-                              <input type="file" class="custom-file-input" accept=".doc,.docx,.pdf" id="formEditFileSummary" aria-describedby="EditFileSummaryHelp"/>
-                              <label class="custom-file-label" for="formEditFileSummary" style="border-color: #28527A;">Choose file</label>
-                            </div>
-                          </div>
-                          <div id="EditFileSummaryHelp" class="form-text small col-sm-12">
-                          Materi berupa modul dengan format DOC, DOCX, atau PDF
-                          </div>  
-                        </div>
-                        <div class="row mb-3">
-                          <div class="col-sm-12">  
-                            <label for="formEditFileMindMap" class="form-label">Materi Mind Mapping <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
-                          </div>
-                          <div class="col-sm-12">
-                            <div class="custom-file">
-                              <input type="file" class="custom-file-input" accept=".ppt,.pptx,.pdf" id="formEditFileMindMap" aria-describedby="EditFileMindMapHelp"/>
-                              <label class="custom-file-label" for="formEditFileMindMap" style="border-color: #28527A;">Choose file</label>
-                            </div>
-                          </div>
-                          <div id="EditFileMindMapHelp" class="form-text small col-sm-12">
-                            Materi berupa slide dengan format PPT, PPTX, atau PDF
-                          </div>   
-                        </div>
-                      </form>
-                      <div class="d-grid text-right">
-                        <button type="button" class="btn btn-secondary mr-1" data-dismiss="modal" aria-label="Close" style="font-weight: bold;width: 100px;">BATAL</button>
-                        <a href="#" class="btn btn-primary" style="font-weight: bold;width: 100px;">SIMPAN</a> 
-                      </div>
-                    </div>
-                    </div>
-                  </div>
-                </div>   
+                  <a href="#" class="btn btn-primary" style="font-weight: bold;width: 100px;"data-toggle="modal" data-target="#ModalEditMateri">EDIT</a>
+                  <div class="modal fade" id="ModalEditMateri" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="ModalEditMateriLabel" aria-hidden="true">
+                  </div>   
                 </div>
               </div>
             </div>
@@ -522,13 +358,55 @@
     </div>
 
     <!-- Optional JavaScript-->
-
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script>
       $(".custom-file-input").on("change", function() {
       var fileName = $(this).val().split("\\").pop();
       $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
       });
     </script>
-  </body>
+    <script>
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom validation styles
+        var inputs = document.getElementsByClassName('custom-file-input')
+    
+        // Loop over each input and watch blue event
+        var validation = Array.prototype.filter.call(inputs, function(input) {
+    
+          input.addEventListener('blur', function(event) {
+            // reset
+            input.classList.remove('is-invalid')
+    
+            if (input.checkValidity() === false) {
+                input.classList.add('is-invalid')
+            }
+          }, false);
+        });
+      }, false);
+    })()
+  </script>
+  <script>
+  (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom validation styles
+      var inputs = document.getElementsByClassName('form-control')
+  
+      // Loop over each input and watch blue event
+      var validation = Array.prototype.filter.call(inputs, function(input) {
+  
+        input.addEventListener('blur', function(event) {
+          // reset
+          input.classList.remove('is-invalid')
+  
+          if (input.checkValidity() === false) {
+              input.classList.add('is-invalid')
+          }
+        }, false);
+      });
+    }, false);
+  })()
+  </script>
+</body>
 </html>

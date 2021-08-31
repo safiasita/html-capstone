@@ -51,55 +51,58 @@
       <div class="card col-md-12">
         <div class="card-body" id="card-body-nm">
           <h5 class="card-title">Tambah Evaluasi Mandiri</h5>
-            <form>
+            <form novalidate="" action="/echo" method="POST" id="formAddEvalM2">
               <div class="d-flex" style="background-color: #f9f9f9;">
               <div class="card-body" id="card-body-nm">
               <div class="row mb-2">
-                <label for="inputEvalM6" class="col-sm-2 col-form-label">Soal 6</label>
+                <label for="inputEvalM6" class="col-sm-2 col-form-label">Question 6 <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control form-control-sm" id="inputEvalM6">
+                  <input type="text" class="form-control form-control-sm" id="inputEvalM6" placeholder="Input question" required>
+                  <div class="invalid-feedback">- Missing question</div>
                 </div>
               </div>
               <div class="row mb-2">
-                <label for="inputEvalM6OpsiA" class="col-sm-2 col-form-label">Opsi a</label>
+                <label for="inputEvalM6OpsiA" class="col-sm-2 col-form-label">Option a <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
                 <div class="col-sm-7">
-                  <input type="text" class="form-control form-control-sm" id="inputEvalM6OpsiA">
+                  <input type="text" class="form-control form-control-sm" id="inputEvalM6OpsiA" placeholder="Input option" required>
+                  <div class="invalid-feedback">- Missing option</div>
                 </div>
-                <label for="inputEvalM6OpsiAnilai" class="col-sm-1 col-form-label">Nilai</label>
+                <label for="inputEvalM6OpsiAnilai" class="col-sm-1 col-form-label">Grade</label>
                 <div class="col-sm-2 mt-1">
                   <div class="form-check form-check-inline" id="inputEvalM6OpsiAnilai">
-                    <input class="form-check-input" type="radio" name="EvalM6OpsiAnilai" id="EvalM6OpsiAnilai100" value="100%">
+                    <input class="form-check-input" type="radio" name="EvalM6OpsiAnilai" id="EvalM6OpsiAnilai100" value="100%" required>
                     <label class="form-check-label" for="EvalM6OpsiAnilai100">100%</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="EvalM6OpsiAnilai" id="EvalM6OpsiAnilai0" value="0%">
+                    <input class="form-check-input" type="radio" name="EvalM6OpsiAnilai" id="EvalM6OpsiAnilai0" value="0%" required>
                     <label class="form-check-label" for="EvalM6OpsiAnilai0">0%</label>
                   </div>
                 </div>
               </div>
               <div class="row mb-2">
-                <label for="inputEvalM6OpsiB" class="col-sm-2 col-form-label">Opsi b</label>
+                <label for="inputEvalM6OpsiB" class="col-sm-2 col-form-label">Option b <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
                 <div class="col-sm-7">
-                  <input type="text" class="form-control form-control-sm" id="inputEvalM6OpsiB">
+                  <input type="text" class="form-control form-control-sm" id="inputEvalM6OpsiB" placeholder="Input option" required>
+                  <div class="invalid-feedback">- Missing option</div>
                 </div>
-                <label for="inputEvalM6OpsiBnilai" class="col-sm-1 col-form-label">Nilai</label>
+                <label for="inputEvalM6OpsiBnilai" class="col-sm-1 col-form-label">Grade</label>
                 <div class="col-sm-2 mt-1">
                   <div class="form-check form-check-inline" id="inputEvalM6OpsiBnilai">
-                    <input class="form-check-input" type="radio" name="EvalM6OpsiBnilai" id="EvalM6OpsiBnilai100" value="100%">
+                    <input class="form-check-input" type="radio" name="EvalM6OpsiBnilai" id="EvalM6OpsiBnilai100" value="100%" required>
                     <label class="form-check-label" for="EvalM6OpsiBnilai100">100%</label>
                   </div>
                   <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="EvalM6OpsiBnilai" id="EvalM6OpsiBnilai0" value="0%">
+                    <input class="form-check-input" type="radio" name="EvalM6OpsiBnilai" id="EvalM6OpsiBnilai0" value="0%" required>
                     <label class="form-check-label" for="EvalM6OpsiBnilai0">0%</label>
                   </div>
                 </div>
               </div>
               <div class="row mb-2">
-                <label for="inputEvalM6OpsiC" class="col-sm-2 col-form-label">Opsi c</label>
+                <label for="inputEvalM6OpsiC" class="col-sm-2 col-form-label">Option c</label>
                 <div class="col-sm-7">
-                  <input type="text" class="form-control form-control-sm" id="inputEvalM6OpsiC">
+                  <input type="text" class="form-control form-control-sm" id="inputEvalM6OpsiC" placeholder="Input option">
                 </div>
-                <label for="inputEvalM6OpsiCnilai" class="col-sm-1 col-form-label">Nilai</label>
+                <label for="inputEvalM6OpsiCnilai" class="col-sm-1 col-form-label">Grade</label>
                 <div class="col-sm-2 mt-1">
                   <div class="form-check form-check-inline" id="inputEvalM6OpsiCnilai">
                     <input class="form-check-input" type="radio" name="EvalM6OpsiCnilai" id="EvalM6OpsiCnilai100" value="100%">
@@ -112,11 +115,11 @@
                 </div>
               </div>
               <div class="row mb-2">
-                <label for="inputEvalM6OpsiD" class="col-sm-2 col-form-label">Opsi d</label>
+                <label for="inputEvalM6OpsiD" class="col-sm-2 col-form-label">Option d</label>
                 <div class="col-sm-7">
-                  <input type="text" class="form-control form-control-sm" id="inputEvalM6OpsiD">
+                  <input type="text" class="form-control form-control-sm" id="inputEvalM6OpsiD"placeholder="Input option">
                 </div>
-                <label for="inputEvalM6OpsiDnilai" class="col-sm-1 col-form-label">Nilai</label>
+                <label for="inputEvalM6OpsiDnilai" class="col-sm-1 col-form-label">Grade</label>
                 <div class="col-sm-2 mt-1">
                   <div class="form-check form-check-inline" id="inputEvalM6OpsiDnilai">
                     <input class="form-check-input" type="radio" name="EvalM6OpsiDnilai" id="EvalM6OpsiDnilai100" value="100%">
@@ -133,17 +136,17 @@
               <div class="d-flex mt-3" style="background-color: #f9f9f9;">
                 <div class="card-body" id="card-body-nm">
                 <div class="row mb-2">
-                  <label for="inputEvalM7" class="col-sm-2 col-form-label">Soal 7</label>
+                  <label for="inputEvalM7" class="col-sm-2 col-form-label">Question 7</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control form-control-sm" id="inputEvalM7">
+                    <input type="text" class="form-control form-control-sm" id="inputEvalM7" placeholder="Input question">
                   </div>
                 </div>
                 <div class="row mb-2">
-                  <label for="inputEvalM7OpsiA" class="col-sm-2 col-form-label">Opsi a</label>
+                  <label for="inputEvalM7OpsiA" class="col-sm-2 col-form-label">Option a</label>
                   <div class="col-sm-7">
-                    <input type="text" class="form-control form-control-sm" id="inputEvalM7OpsiA">
+                    <input type="text" class="form-control form-control-sm" id="inputEvalM7OpsiA" placeholder="Input option">
                   </div>
-                  <label for="inputEvalM7OpsiAnilai" class="col-sm-1 col-form-label">Nilai</label>
+                  <label for="inputEvalM7OpsiAnilai" class="col-sm-1 col-form-label">Grade</label>
                   <div class="col-sm-2 mt-1">
                     <div class="form-check form-check-inline" id="inputEvalM7OpsiAnilai">
                       <input class="form-check-input" type="radio" name="EvalM7OpsiAnilai" id="EvalM7OpsiAnilai100" value="100%">
@@ -156,11 +159,11 @@
                   </div>
                 </div>
                 <div class="row mb-2">
-                  <label for="inputEvalM7OpsiB" class="col-sm-2 col-form-label">Opsi b</label>
+                  <label for="inputEvalM7OpsiB" class="col-sm-2 col-form-label">Option b</label>
                   <div class="col-sm-7">
-                    <input type="text" class="form-control form-control-sm" id="inputEvalM7OpsiB">
+                    <input type="text" class="form-control form-control-sm" id="inputEvalM7OpsiB" placeholder="Input option">
                   </div>
-                  <label for="inputEvalM7OpsiBnilai" class="col-sm-1 col-form-label">Nilai</label>
+                  <label for="inputEvalM7OpsiBnilai" class="col-sm-1 col-form-label">Grade</label>
                   <div class="col-sm-2 mt-1">
                     <div class="form-check form-check-inline" id="inputEvalM7OpsiBnilai">
                       <input class="form-check-input" type="radio" name="EvalM7OpsiBnilai" id="EvalM7OpsiBnilai100" value="100%">
@@ -173,11 +176,11 @@
                   </div>
                 </div>
                 <div class="row mb-2">
-                  <label for="inputEvalM7OpsiC" class="col-sm-2 col-form-label">Opsi c</label>
+                  <label for="inputEvalM7OpsiC" class="col-sm-2 col-form-label">Option c</label>
                   <div class="col-sm-7">
-                    <input type="text" class="form-control form-control-sm" id="inputEvalM7OpsiC">
+                    <input type="text" class="form-control form-control-sm" id="inputEvalM7OpsiC" placeholder="Input option">
                   </div>
-                  <label for="inputEvalM7OpsiCnilai" class="col-sm-1 col-form-label">Nilai</label>
+                  <label for="inputEvalM7OpsiCnilai" class="col-sm-1 col-form-label">Grade</label>
                   <div class="col-sm-2 mt-1">
                     <div class="form-check form-check-inline" id="inputEvalM7OpsiCnilai">
                       <input class="form-check-input" type="radio" name="EvalM7OpsiCnilai" id="EvalM7OpsiCnilai100" value="100%">
@@ -190,11 +193,11 @@
                   </div>
                 </div>
                 <div class="row mb-2">
-                  <label for="inputEvalM7OpsiD" class="col-sm-2 col-form-label">Opsi d</label>
+                  <label for="inputEvalM7OpsiD" class="col-sm-2 col-form-label">Option d</label>
                   <div class="col-sm-7">
-                    <input type="text" class="form-control form-control-sm" id="inputEvalM7OpsiD">
+                    <input type="text" class="form-control form-control-sm" id="inputEvalM7OpsiD" placeholder="Input option">
                   </div>
-                  <label for="inputEvalM7OpsiDnilai" class="col-sm-1 col-form-label">Nilai</label>
+                  <label for="inputEvalM7OpsiDnilai" class="col-sm-1 col-form-label">Grade</label>
                   <div class="col-sm-2 mt-1">
                     <div class="form-check form-check-inline" id="inputEvalM7OpsiDnilai">
                       <input class="form-check-input" type="radio" name="EvalM7OpsiDnilai" id="EvalM7OpsiDnilai100" value="100%">
@@ -211,17 +214,17 @@
                 <div class="d-flex mt-3" style="background-color: #f9f9f9;">
                   <div class="card-body" id="card-body-nm">
                   <div class="row mb-2">
-                    <label for="inputEvalM8" class="col-sm-2 col-form-label">Soal 8</label>
+                    <label for="inputEvalM8" class="col-sm-2 col-form-label">Question 8</label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control form-control-sm" id="inputEvalM8">
+                      <input type="text" class="form-control form-control-sm" id="inputEvalM8" placeholder="Input question">
                     </div>
                   </div>
                   <div class="row mb-2">
-                    <label for="inputEvalM8OpsiA" class="col-sm-2 col-form-label">Opsi a</label>
+                    <label for="inputEvalM8OpsiA" class="col-sm-2 col-form-label">Option a</label>
                     <div class="col-sm-7">
-                      <input type="text" class="form-control form-control-sm" id="inputEvalM8OpsiA">
+                      <input type="text" class="form-control form-control-sm" id="inputEvalM8OpsiA" placeholder="Input option">
                     </div>
-                    <label for="inputEvalM8OpsiAnilai" class="col-sm-1 col-form-label">Nilai</label>
+                    <label for="inputEvalM8OpsiAnilai" class="col-sm-1 col-form-label">Grade</label>
                     <div class="col-sm-2 mt-1">
                       <div class="form-check form-check-inline" id="inputEvalM8OpsiAnilai">
                         <input class="form-check-input" type="radio" name="EvalM8OpsiAnilai" id="EvalM8OpsiAnilai100" value="100%">
@@ -234,11 +237,11 @@
                     </div>
                   </div>
                   <div class="row mb-2">
-                    <label for="inputEvalM8OpsiB" class="col-sm-2 col-form-label">Opsi b</label>
+                    <label for="inputEvalM8OpsiB" class="col-sm-2 col-form-label">Option b</label>
                     <div class="col-sm-7">
-                      <input type="text" class="form-control form-control-sm" id="inputEvalM8OpsiB">
+                      <input type="text" class="form-control form-control-sm" id="inputEvalM8OpsiB" placeholder="Input option">
                     </div>
-                    <label for="inputEvalM8OpsiBnilai" class="col-sm-1 col-form-label">Nilai</label>
+                    <label for="inputEvalM8OpsiBnilai" class="col-sm-1 col-form-label">Grade</label>
                     <div class="col-sm-2 mt-1">
                       <div class="form-check form-check-inline" id="inputEvalM8OpsiBnilai">
                         <input class="form-check-input" type="radio" name="EvalM8OpsiBnilai" id="EvalM8OpsiBnilai100" value="100%">
@@ -251,11 +254,11 @@
                     </div>
                   </div>
                   <div class="row mb-2">
-                    <label for="inputEvalM8OpsiC" class="col-sm-2 col-form-label">Opsi c</label>
+                    <label for="inputEvalM8OpsiC" class="col-sm-2 col-form-label">Option c</label>
                     <div class="col-sm-7">
-                      <input type="text" class="form-control form-control-sm" id="inputEvalM8OpsiC">
+                      <input type="text" class="form-control form-control-sm" id="inputEvalM8OpsiC" placeholder="Input option">
                     </div>
-                    <label for="inputEvalM8OpsiCnilai" class="col-sm-1 col-form-label">Nilai</label>
+                    <label for="inputEvalM8OpsiCnilai" class="col-sm-1 col-form-label">Grade</label>
                     <div class="col-sm-2 mt-1">
                       <div class="form-check form-check-inline" id="inputEvalM8OpsiCnilai">
                         <input class="form-check-input" type="radio" name="EvalM8OpsiCnilai" id="EvalM8OpsiCnilai100" value="100%">
@@ -268,11 +271,11 @@
                     </div>
                   </div>
                   <div class="row mb-2">
-                    <label for="inputEvalM8OpsiD" class="col-sm-2 col-form-label">Opsi d</label>
+                    <label for="inputEvalM8OpsiD" class="col-sm-2 col-form-label">Option d</label>
                     <div class="col-sm-7">
-                      <input type="text" class="form-control form-control-sm" id="inputEvalM8OpsiD">
+                      <input type="text" class="form-control form-control-sm" id="inputEvalM8OpsiD" placeholder="Input option">
                     </div>
-                    <label for="inputEvalM8OpsiDnilai" class="col-sm-1 col-form-label">Nilai</label>
+                    <label for="inputEvalM8OpsiDnilai" class="col-sm-1 col-form-label">Grade</label>
                     <div class="col-sm-2 mt-1">
                       <div class="form-check form-check-inline" id="inputEvalM8OpsiDnilai">
                         <input class="form-check-input" type="radio" name="EvalM8OpsiDnilai" id="EvalM8OpsiDnilai100" value="100%">
@@ -289,17 +292,17 @@
               <div class="d-flex mt-3" style="background-color: #f9f9f9;">
                 <div class="card-body" id="card-body-nm">
                 <div class="row mb-2">
-                  <label for="inputEvalM9" class="col-sm-2 col-form-label">Soal 9</label>
+                  <label for="inputEvalM9" class="col-sm-2 col-form-label">Question 9</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control form-control-sm" id="inputEvalM9">
+                    <input type="text" class="form-control form-control-sm" id="inputEvalM9" placeholder="Input question">
                   </div>
                 </div>
                 <div class="row mb-2">
-                  <label for="inputEvalM9OpsiA" class="col-sm-2 col-form-label">Opsi a</label>
+                  <label for="inputEvalM9OpsiA" class="col-sm-2 col-form-label">Option a</label>
                   <div class="col-sm-7">
-                    <input type="text" class="form-control form-control-sm" id="inputEvalM9OpsiA">
+                    <input type="text" class="form-control form-control-sm" id="inputEvalM9OpsiA" placeholder="Input option">
                   </div>
-                  <label for="inputEvalM9OpsiAnilai" class="col-sm-1 col-form-label">Nilai</label>
+                  <label for="inputEvalM9OpsiAnilai" class="col-sm-1 col-form-label">Grade</label>
                   <div class="col-sm-2 mt-1">
                     <div class="form-check form-check-inline" id="inputEvalM9OpsiAnilai">
                       <input class="form-check-input" type="radio" name="EvalM9OpsiAnilai" id="EvalM9OpsiAnilai100" value="100%">
@@ -312,11 +315,11 @@
                   </div>
                 </div>
                 <div class="row mb-2">
-                  <label for="inputEvalM9OpsiB" class="col-sm-2 col-form-label">Opsi b</label>
+                  <label for="inputEvalM9OpsiB" class="col-sm-2 col-form-label">Option b</label>
                   <div class="col-sm-7">
-                    <input type="text" class="form-control form-control-sm" id="inputEvalM9OpsiB">
+                    <input type="text" class="form-control form-control-sm" id="inputEvalM9OpsiB" placeholder="Input option">
                   </div>
-                  <label for="inputEvalM9OpsiBnilai" class="col-sm-1 col-form-label">Nilai</label>
+                  <label for="inputEvalM9OpsiBnilai" class="col-sm-1 col-form-label">Grade</label>
                   <div class="col-sm-2 mt-1">
                     <div class="form-check form-check-inline" id="inputEvalM9OpsiBnilai">
                       <input class="form-check-input" type="radio" name="EvalM9OpsiBnilai" id="EvalM9OpsiBnilai100" value="100%">
@@ -329,11 +332,11 @@
                   </div>
                 </div>
                 <div class="row mb-2">
-                  <label for="inputEvalM9OpsiC" class="col-sm-2 col-form-label">Opsi c</label>
+                  <label for="inputEvalM9OpsiC" class="col-sm-2 col-form-label">Option c</label>
                   <div class="col-sm-7">
-                    <input type="text" class="form-control form-control-sm" id="inputEvalM9OpsiC">
+                    <input type="text" class="form-control form-control-sm" id="inputEvalM9OpsiC" placeholder="Input option">
                   </div>
-                  <label for="inputEvalM9OpsiCnilai" class="col-sm-1 col-form-label">Nilai</label>
+                  <label for="inputEvalM9OpsiCnilai" class="col-sm-1 col-form-label">Grade</label>
                   <div class="col-sm-2 mt-1">
                     <div class="form-check form-check-inline" id="inputEvalM9OpsiCnilai">
                       <input class="form-check-input" type="radio" name="EvalM9OpsiCnilai" id="EvalM9OpsiCnilai100" value="100%">
@@ -346,11 +349,11 @@
                   </div>
                 </div>
                 <div class="row mb-2">
-                  <label for="inputEvalM9OpsiD" class="col-sm-2 col-form-label">Opsi d</label>
+                  <label for="inputEvalM9OpsiD" class="col-sm-2 col-form-label">Option d</label>
                   <div class="col-sm-7">
-                    <input type="text" class="form-control form-control-sm" id="inputEvalM9OpsiD">
+                    <input type="text" class="form-control form-control-sm" id="inputEvalM9OpsiD" placeholder="Input option">
                   </div>
-                  <label for="inputEvalM9OpsiDnilai" class="col-sm-1 col-form-label">Nilai</label>
+                  <label for="inputEvalM9OpsiDnilai" class="col-sm-1 col-form-label">Grade</label>
                   <div class="col-sm-2 mt-1">
                     <div class="form-check form-check-inline" id="inputEvalM9OpsiDnilai">
                       <input class="form-check-input" type="radio" name="EvalM9OpsiDnilai" id="EvalM9OpsiDnilai100" value="100%">
@@ -367,17 +370,17 @@
               <div class="d-flex mt-3" style="background-color: #f9f9f9;">
                 <div class="card-body" id="card-body-nm">
                 <div class="row mb-2">
-                  <label for="inputEvalM10" class="col-sm-2 col-form-label">Soal 10</label>
+                  <label for="inputEvalM10" class="col-sm-2 col-form-label">Question 10</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control form-control-sm" id="inputEvalM10">
+                    <input type="text" class="form-control form-control-sm" id="inputEvalM10" placeholder="Input question">
                   </div>
                 </div>
                 <div class="row mb-2">
-                  <label for="inputEvalM10OpsiA" class="col-sm-2 col-form-label">Opsi a</label>
+                  <label for="inputEvalM10OpsiA" class="col-sm-2 col-form-label">Option a</label>
                   <div class="col-sm-7">
-                    <input type="text" class="form-control form-control-sm" id="inputEvalM10OpsiA">
+                    <input type="text" class="form-control form-control-sm" id="inputEvalM10OpsiA" placeholder="Input option">
                   </div>
-                  <label for="inputEvalM10OpsiAnilai" class="col-sm-1 col-form-label">Nilai</label>
+                  <label for="inputEvalM10OpsiAnilai" class="col-sm-1 col-form-label">Grade</label>
                   <div class="col-sm-2 mt-1">
                     <div class="form-check form-check-inline" id="inputEvalM10OpsiAnilai">
                       <input class="form-check-input" type="radio" name="EvalM10OpsiAnilai" id="EvalM10OpsiAnilai100" value="100%">
@@ -390,11 +393,11 @@
                   </div>
                 </div>
                 <div class="row mb-2">
-                  <label for="inputEvalM10OpsiB" class="col-sm-2 col-form-label">Opsi b</label>
+                  <label for="inputEvalM10OpsiB" class="col-sm-2 col-form-label">Option b</label>
                   <div class="col-sm-7">
-                    <input type="text" class="form-control form-control-sm" id="inputEvalM10OpsiB">
+                    <input type="text" class="form-control form-control-sm" id="inputEvalM10OpsiB" placeholder="Input option">
                   </div>
-                  <label for="inputEvalM10OpsiBnilai" class="col-sm-1 col-form-label">Nilai</label>
+                  <label for="inputEvalM10OpsiBnilai" class="col-sm-1 col-form-label">Grade</label>
                   <div class="col-sm-2 mt-1">
                     <div class="form-check form-check-inline" id="inputEvalM10OpsiBnilai">
                       <input class="form-check-input" type="radio" name="EvalM10OpsiBnilai" id="EvalM10OpsiBnilai100" value="100%">
@@ -407,11 +410,11 @@
                   </div>
                 </div>
                 <div class="row mb-2">
-                  <label for="inputEvalM10OpsiC" class="col-sm-2 col-form-label">Opsi c</label>
+                  <label for="inputEvalM10OpsiC" class="col-sm-2 col-form-label">Option c</label>
                   <div class="col-sm-7">
-                    <input type="text" class="form-control form-control-sm" id="inputEvalM10OpsiC">
+                    <input type="text" class="form-control form-control-sm" id="inputEvalM10OpsiC" placeholder="Input option">
                   </div>
-                  <label for="inputEvalM10OpsiCnilai" class="col-sm-1 col-form-label">Nilai</label>
+                  <label for="inputEvalM10OpsiCnilai" class="col-sm-1 col-form-label">Grade</label>
                   <div class="col-sm-2 mt-1">
                     <div class="form-check form-check-inline" id="inputEvalM10OpsiCnilai">
                       <input class="form-check-input" type="radio" name="EvalM10OpsiCnilai" id="EvalM10OpsiCnilai100" value="100%">
@@ -424,11 +427,11 @@
                   </div>
                 </div>
                 <div class="row mb-2">
-                  <label for="inputEvalM10OpsiD" class="col-sm-2 col-form-label">Opsi d</label>
+                  <label for="inputEvalM10OpsiD" class="col-sm-2 col-form-label">Option d</label>
                   <div class="col-sm-7">
-                    <input type="text" class="form-control form-control-sm" id="inputEvalM10OpsiD">
+                    <input type="text" class="form-control form-control-sm" id="inputEvalM10OpsiD" placeholder="Input option">
                   </div>
-                  <label for="inputEvalM10OpsiDnilai" class="col-sm-1 col-form-label">Nilai</label>
+                  <label for="inputEvalM10OpsiDnilai" class="col-sm-1 col-form-label">Grade</label>
                   <div class="col-sm-2 mt-1">
                     <div class="form-check form-check-inline" id="inputEvalM10OpsiDnilai">
                       <input class="form-check-input" type="radio" name="EvalM10OpsiDnilai" id="EvalM10OpsiDnilai100" value="100%">
@@ -453,7 +456,7 @@
                 </nav>
               </div>
               <div scope="col" style="width: 46%;">
-              <a href="#" class="btn btn-primary float-right" style="font-weight: bold;">SIMPAN</a>
+              <button class="btn btn-primary" type="submit" style="font-weight: bold;width: 100px;">SIMPAN</button>
               <a href="#" class="btn btn-secondary float-right mr-2" style="font-weight: bold;">BATAL</a>
               </div>
             </div>
@@ -464,5 +467,72 @@
 
     <!-- Optional JavaScript; choose one of the two! -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // fetch all the forms we want to apply custom style
+          var inputs = document.getElementsByClassName('form-control')
+      
+          // loop over each input and watch blue event
+          var validation = Array.prototype.filter.call(inputs, function(input) {
+              
+            input.addEventListener('blur', function(event) {
+              // reset
+              input.classList.remove('is-invalid')
+              
+              if (input.checkValidity() === false) {
+                  input.classList.add('is-invalid')
+              }
+
+            }, false);
+          });
+        }, false);
+      })()
+      </script>
+      <script>
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom validation styles
+            var inputs = document.getElementsByClassName('custom-file-input')
+        
+            // Loop over each input and watch blue event
+            var validation = Array.prototype.filter.call(inputs, function(input) {
+        
+              input.addEventListener('blur', function(event) {
+                // reset
+                input.classList.remove('is-invalid')
+        
+                if (input.checkValidity() === false) {
+                    input.classList.add('is-invalid')
+                }
+              }, false);
+            });
+          }, false);
+        })()
+      </script>
+      <script>
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom validation styles
+            var inputs = document.getElementsByClassName('form-check-input')
+        
+            // Loop over each input and watch blue event
+            var validation = Array.prototype.filter.call(inputs, function(input) {
+        
+              input.addEventListener('blur', function(event) {
+                // reset
+                input.classList.remove('is-invalid')
+        
+                if (input.checkValidity() === false) {
+                    input.classList.add('is-invalid')
+                }
+              }, false);
+            });
+          }, false);
+        })()
+      </script>
   </body>
 </html>
