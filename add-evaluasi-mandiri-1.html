@@ -66,7 +66,7 @@
               <div class="row mb-2">
                 <label for="inputEvalM1" class="col-sm-2 col-form-label">Question 1 <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control form-control-sm" id="inputEvalM1" placeholder="Input question" required>
+                  <textarea type="text" class="form-control form-control-sm mb-2" id="inputEvalM1" placeholder="Input question" required></textarea>
                   <div class="invalid-feedback">- Missing question</div>
                 </div>
               </div>
@@ -145,44 +145,44 @@
                 <div class="d-flex mt-3" style="background-color: #f9f9f9;">
                   <div class="card-body" id="card-body-nm">
                   <div class="row mb-2">
-                    <label for="inputEvalM2" class="col-sm-2 col-form-label">Question 2</label>
+                    <label for="inputEvalM2" class="col-sm-2 col-form-label">Question 2 <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
                     <div class="col-sm-10">
-                      <input type="text" class="form-control form-control-sm" id="inputEvalM2" placeholder="Input question">
+                      <textarea type="text" class="form-control form-control-sm mb-2" id="inputEvalM2" placeholder="Input question" required></textarea>
                       <div class="invalid-feedback">- Missing question</div>
                     </div>
                   </div>
                   <div class="row mb-2">
-                    <label for="inputEvalM2OpsiA" class="col-sm-2 col-form-label">Option a</label>
+                    <label for="inputEvalM2OpsiA" class="col-sm-2 col-form-label">Option a <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
                     <div class="col-sm-7">
-                      <input type="text" class="form-control form-control-sm" id="inputEvalM2OpsiA" placeholder="Input option">
-                      <div class="invalid-feedback">- Missing question</div>
+                      <input type="text" class="form-control form-control-sm" id="inputEvalM2OpsiA" placeholder="Input option" required>
+                      <div class="invalid-feedback">- Missing option</div>
                     </div>
                     <label for="inputEvalM2OpsiAnilai" class="col-sm-1 col-form-label">Grade</label>
                     <div class="col-sm-2 mt-1">
                       <div class="form-check form-check-inline" id="inputEvalM2OpsiAnilai">
-                        <input class="form-check-input" type="radio" name="EvalM2OpsiAnilai" id="EvalM2OpsiAnilai100" value="100%">
+                        <input class="form-check-input" type="radio" name="EvalM2OpsiAnilai" id="EvalM2OpsiAnilai100" value="100%" required>
                         <label class="form-check-label" for="EvalM2OpsiAnilai100">100%</label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="EvalM2OpsiAnilai" id="EvalM2OpsiAnilai0" value="0%">
+                        <input class="form-check-input" type="radio" name="EvalM2OpsiAnilai" id="EvalM2OpsiAnilai0" value="0%" required>
                         <label class="form-check-label" for="EvalM2OpsiAnilai0">0%</label>
                       </div>
                     </div>
                   </div>
                   <div class="row mb-2">
-                    <label for="inputEvalM2OpsiB" class="col-sm-2 col-form-label">Option b</label>
+                    <label for="inputEvalM2OpsiB" class="col-sm-2 col-form-label">Option b <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
                     <div class="col-sm-7">
-                      <input type="text" class="form-control form-control-sm" id="inputEvalM2OpsiB" placeholder="Input option">
+                      <input type="text" class="form-control form-control-sm" id="inputEvalM2OpsiB" placeholder="Input option" required>
                       <div class="invalid-feedback">- Missing option</div>
                     </div>
                     <label for="inputEvalM2OpsiBnilai" class="col-sm-1 col-form-label">Grade</label>
                     <div class="col-sm-2 mt-1">
                       <div class="form-check form-check-inline" id="inputEvalM2OpsiBnilai">
-                        <input class="form-check-input" type="radio" name="EvalM2OpsiBnilai" id="EvalM2OpsiBnilai100" value="100%">
+                        <input class="form-check-input" type="radio" name="EvalM2OpsiBnilai" id="EvalM2OpsiBnilai100" value="100%" required>
                         <label class="form-check-label" for="EvalM2OpsiBnilai100">100%</label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="EvalM2OpsiBnilai" id="EvalM2OpsiBnilai0" value="0%">
+                        <input class="form-check-input" type="radio" name="EvalM2OpsiBnilai" id="EvalM2OpsiBnilai0" value="0%" required>
                         <label class="form-check-label" for="EvalM2OpsiBnilai0">0%</label>
                       </div>
                     </div>
@@ -226,41 +226,44 @@
               <div class="d-flex mt-3" style="background-color: #f9f9f9;">
                 <div class="card-body" id="card-body-nm">
                 <div class="row mb-2">
-                  <label for="inputEvalM3" class="col-sm-2 col-form-label">Question 3</label>
+                  <label for="inputEvalM3" class="col-sm-2 col-form-label">Question 3 <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control form-control-sm" id="inputEvalM3" placeholder="Input question">
+                    <textarea type="text" class="form-control form-control-sm mb-2" id="inputEvalM3" placeholder="Input question" required></textarea>
+                    <div class="invalid-feedback">- Missing question</div>
                   </div>
                 </div>
                 <div class="row mb-2">
-                  <label for="inputEvalM3OpsiA" class="col-sm-2 col-form-label">Option a</label>
+                  <label for="inputEvalM3OpsiA" class="col-sm-2 col-form-label">Option a <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
                   <div class="col-sm-7">
-                    <input type="text" class="form-control form-control-sm" id="inputEvalM3OpsiA" placeholder="Input option">
+                    <input type="text" class="form-control form-control-sm" id="inputEvalM3OpsiA" placeholder="Input option" required>
+                    <div class="invalid-feedback">- Missing option</div>
                   </div>
                   <label for="inputEvalM3OpsiAnilai" class="col-sm-1 col-form-label">Grade</label>
                   <div class="col-sm-2 mt-1">
                     <div class="form-check form-check-inline" id="inputEvalM3OpsiAnilai">
-                      <input class="form-check-input" type="radio" name="EvalM3OpsiAnilai" id="EvalM3OpsiAnilai100" value="100%">
+                      <input class="form-check-input" type="radio" name="EvalM3OpsiAnilai" id="EvalM3OpsiAnilai100" value="100%" required>
                       <label class="form-check-label" for="EvalM3OpsiAnilai100">100%</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="EvalM3OpsiAnilai" id="EvalM3OpsiAnilai0" value="0%">
+                      <input class="form-check-input" type="radio" name="EvalM3OpsiAnilai" id="EvalM3OpsiAnilai0" value="0%" required>
                       <label class="form-check-label" for="EvalM3OpsiAnilai0">0%</label>
                     </div>
                   </div>
                 </div>
                 <div class="row mb-2">
-                  <label for="inputEvalM3OpsiB" class="col-sm-2 col-form-label">Option b</label>
+                  <label for="inputEvalM3OpsiB" class="col-sm-2 col-form-label">Option b <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
                   <div class="col-sm-7">
-                    <input type="text" class="form-control form-control-sm" id="inputEvalM3OpsiB" placeholder="Input option">
+                    <input type="text" class="form-control form-control-sm" id="inputEvalM3OpsiB" placeholder="Input option" required>
+                    <div class="invalid-feedback">- Missing option</div>
                   </div>
                   <label for="inputEvalM3OpsiBnilai" class="col-sm-1 col-form-label">Grade</label>
                   <div class="col-sm-2 mt-1">
                     <div class="form-check form-check-inline" id="inputEvalM3OpsiBnilai">
-                      <input class="form-check-input" type="radio" name="EvalM3OpsiBnilai" id="EvalM3OpsiBnilai100" value="100%">
+                      <input class="form-check-input" type="radio" name="EvalM3OpsiBnilai" id="EvalM3OpsiBnilai100" value="100%" required>
                       <label class="form-check-label" for="EvalM3OpsiBnilai100">100%</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="EvalM3OpsiBnilai" id="EvalM3OpsiBnilai0" value="0%">
+                      <input class="form-check-input" type="radio" name="EvalM3OpsiBnilai" id="EvalM3OpsiBnilai0" value="0%" required>
                       <label class="form-check-label" for="EvalM3OpsiBnilai0">0%</label>
                     </div>
                   </div>
@@ -304,41 +307,44 @@
               <div class="d-flex mt-3" style="background-color: #f9f9f9;">
                 <div class="card-body" id="card-body-nm">
                 <div class="row mb-2">
-                  <label for="inputEvalM4" class="col-sm-2 col-form-label">Question 4</label>
+                  <label for="inputEvalM4" class="col-sm-2 col-form-label">Question 4 <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control form-control-sm" id="inputEvalM4" placeholder="Input question">
+                    <textarea type="text" class="form-control form-control-sm mb-2" id="inputEvalM4" placeholder="Input question" required></textarea>
+                    <div class="invalid-feedback">- Missing question</div>
                   </div>
                 </div>
                 <div class="row mb-2">
-                  <label for="inputEvalM4OpsiA" class="col-sm-2 col-form-label">Option a</label>
+                  <label for="inputEvalM4OpsiA" class="col-sm-2 col-form-label">Option a <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
                   <div class="col-sm-7">
-                    <input type="text" class="form-control form-control-sm" id="inputEvalM4OpsiA" placeholder="Input option">
+                    <input type="text" class="form-control form-control-sm" id="inputEvalM4OpsiA" placeholder="Input option" required>
+                    <div class="invalid-feedback">- Missing option</div>
                   </div>
                   <label for="inputEvalM4OpsiAnilai" class="col-sm-1 col-form-label">Grade</label>
                   <div class="col-sm-2 mt-1">
                     <div class="form-check form-check-inline" id="inputEvalM4OpsiAnilai">
-                      <input class="form-check-input" type="radio" name="EvalM4OpsiAnilai" id="EvalM4OpsiAnilai100" value="100%">
+                      <input class="form-check-input" type="radio" name="EvalM4OpsiAnilai" id="EvalM4OpsiAnilai100" value="100%" required>
                       <label class="form-check-label" for="EvalM4OpsiAnilai100">100%</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="EvalM4OpsiAnilai" id="EvalM4OpsiAnilai0" value="0%">
+                      <input class="form-check-input" type="radio" name="EvalM4OpsiAnilai" id="EvalM4OpsiAnilai0" value="0%" required>
                       <label class="form-check-label" for="EvalM4OpsiAnilai0">0%</label>
                     </div>
                   </div>
                 </div>
                 <div class="row mb-2">
-                  <label for="inputEvalM4OpsiB" class="col-sm-2 col-form-label">Option b</label>
+                  <label for="inputEvalM4OpsiB" class="col-sm-2 col-form-label">Option b <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
                   <div class="col-sm-7">
-                    <input type="text" class="form-control form-control-sm" id="inputEvalM4OpsiB" placeholder="Input option">
+                    <input type="text" class="form-control form-control-sm" id="inputEvalM4OpsiB" placeholder="Input option" required>
+                    <div class="invalid-feedback">- Missing option</div>
                   </div>
                   <label for="inputEvalM4OpsiBnilai" class="col-sm-1 col-form-label">Grade</label>
                   <div class="col-sm-2 mt-1">
                     <div class="form-check form-check-inline" id="inputEvalM4OpsiBnilai">
-                      <input class="form-check-input" type="radio" name="EvalM4OpsiBnilai" id="EvalM4OpsiBnilai100" value="100%">
+                      <input class="form-check-input" type="radio" name="EvalM4OpsiBnilai" id="EvalM4OpsiBnilai100" value="100%" required>
                       <label class="form-check-label" for="EvalM4OpsiBnilai100">100%</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="EvalM4OpsiBnilai" id="EvalM4OpsiBnilai0" value="0%">
+                      <input class="form-check-input" type="radio" name="EvalM4OpsiBnilai" id="EvalM4OpsiBnilai0" value="0%" required>
                       <label class="form-check-label" for="EvalM4OpsiBnilai0">0%</label>
                     </div>
                   </div>
@@ -382,41 +388,44 @@
               <div class="d-flex mt-3" style="background-color: #f9f9f9;">
                 <div class="card-body" id="card-body-nm">
                 <div class="row mb-2">
-                  <label for="inputEvalM5" class="col-sm-2 col-form-label">Question 5</label>
+                  <label for="inputEvalM5" class="col-sm-2 col-form-label">Question 5 <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control form-control-sm" id="inputEvalM5" placeholder="Input question">
+                    <textarea type="text" class="form-control form-control-sm mb-2" id="inputEvalM5" placeholder="Input question" required></textarea>
+                    <div class="invalid-feedback">- Missing question</div>
                   </div>
                 </div>
                 <div class="row mb-2">
-                  <label for="inputEvalM5OpsiA" class="col-sm-2 col-form-label">Option a</label>
+                  <label for="inputEvalM5OpsiA" class="col-sm-2 col-form-label">Option a <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
                   <div class="col-sm-7">
-                    <input type="text" class="form-control form-control-sm" id="inputEvalM5OpsiA" placeholder="Input option">
+                    <input type="text" class="form-control form-control-sm" id="inputEvalM5OpsiA" placeholder="Input option" required>
+                    <div class="invalid-feedback">- Missing option</div>
                   </div>
                   <label for="inputEvalM5OpsiAnilai" class="col-sm-1 col-form-label">Grade</label>
                   <div class="col-sm-2 mt-1">
                     <div class="form-check form-check-inline" id="inputEvalM5OpsiAnilai">
-                      <input class="form-check-input" type="radio" name="EvalM5OpsiAnilai" id="EvalM5OpsiAnilai100" value="100%">
+                      <input class="form-check-input" type="radio" name="EvalM5OpsiAnilai" id="EvalM5OpsiAnilai100" value="100%" required>
                       <label class="form-check-label" for="EvalM5OpsiAnilai100">100%</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="EvalM5OpsiAnilai" id="EvalM5OpsiAnilai0" value="0%">
+                      <input class="form-check-input" type="radio" name="EvalM5OpsiAnilai" id="EvalM5OpsiAnilai0" value="0%" required>
                       <label class="form-check-label" for="EvalM5OpsiAnilai0">0%</label>
                     </div>
                   </div>
                 </div>
                 <div class="row mb-2">
-                  <label for="inputEvalM5OpsiB" class="col-sm-2 col-form-label">Option b</label>
+                  <label for="inputEvalM5OpsiB" class="col-sm-2 col-form-label">Option b <i class="fas fa-exclamation-circle fa-sm" style="color: #DB1E18;" data-toggle="tooltip" data-placement="top" title="Required"></i></label>
                   <div class="col-sm-7">
-                    <input type="text" class="form-control form-control-sm" id="inputEvalM5OpsiB" placeholder="Input option">
+                    <input type="text" class="form-control form-control-sm" id="inputEvalM5OpsiB" placeholder="Input option" required>
+                    <div class="invalid-feedback">- Missing option</div>
                   </div>
                   <label for="inputEvalM5OpsiBnilai" class="col-sm-1 col-form-label">Grade</label>
                   <div class="col-sm-2 mt-1">
                     <div class="form-check form-check-inline" id="inputEvalM5OpsiBnilai">
-                      <input class="form-check-input" type="radio" name="EvalM5OpsiBnilai" id="EvalM5OpsiBnilai100" value="100%">
+                      <input class="form-check-input" type="radio" name="EvalM5OpsiBnilai" id="EvalM5OpsiBnilai100" value="100%" required>
                       <label class="form-check-label" for="EvalM5OpsiBnilai100">100%</label>
                     </div>
                     <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="EvalM5OpsiBnilai" id="EvalM5OpsiBnilai0" value="0%">
+                      <input class="form-check-input" type="radio" name="EvalM5OpsiBnilai" id="EvalM5OpsiBnilai0" value="0%" required>
                       <label class="form-check-label" for="EvalM5OpsiBnilai0">0%</label>
                     </div>
                   </div>
@@ -468,7 +477,7 @@
                 </nav>
               </div>
               <div scope="col" style="width: 46%;">
-              <a href="#" class="btn btn-primary float-right" style="font-weight: bold;">SIMPAN</a>
+              <button class="btn btn-primary float-right" type="submit" style="font-weight: bold;">SIMPAN</button>
               <a href="#" class="btn btn-secondary float-right mr-2" style="font-weight: bold;">BATAL</a>
               </div>
             </div>
